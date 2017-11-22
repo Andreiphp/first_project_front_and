@@ -15,6 +15,13 @@
         margin: 0 auto;
         position: relative;
     }
+    .menu li .new_list {
+        min-width: 180px;
+        display: block;
+        position: static;
+        list-style-type: none;
+        transition: 0.9s;
+    }
 
     .menu{
         display: none;
