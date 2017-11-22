@@ -1,0 +1,428 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width initial-scale=1.0">
+    <title>Slider</title>
+    <link rel="stylesheet" type="text/css" href="css/normalize.css" >
+    <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="css/style.css" >
+    <link rel="stylesheet" type="text/css" href="css/animate.min.css">
+    <link rel="stylesheet" type="text/css" href="css/media.css" >
+    <link rel="stylesheet" type="text/css" href="libs/slick/slick.css"/>
+    <link rel="stylesheet" type="text/css" href="libs/slick/slick-theme.css"/>
+    <link rel="stylesheet" href="https://code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+</head>
+<script type="text/javascript">
+    var id_menu = new Array('sub_menu_1','sub_menu_2','sub_menu_3');
+    startList = function allclose() {
+        for (i=0; i < id_menu.length; i++){
+            document.getElementById(id_menu[i]).style.display = "none";
+        }
+    };
+    function openMenu(id){
+        for (i=0; i < id_menu.length; i++){
+            if (id != id_menu[i]){
+                document.getElementById(id_menu[i]).style.display = "none";
+            }
+        }
+        if (document.getElementById(id).style.display == "block"){
+            document.getElementById(id).style.display = "none";
+        }else{
+            document.getElementById(id).style.display = "block";
+        }
+    }
+    window.onload = startList;
+</script>
+<body>
+<div class="main">
+    <div class="header">
+        <div class="wrapper">
+            <div class="header_content">
+                <div class="care inl"><span>custom care:</span><span class="care_tel">888-23-4567</span></div>
+                <div class="right">
+                    <div class=" inl select">
+                        <form method="get">
+                            <select id="phone" name="phone">
+                                <option selected value="us">US</option>
+                                <option value="rub">RUB</option>
+                                <option value="byn">BYN</option>
+                                <option value="eur">EUR</option>
+                            </select>
+                        </form>
+                    </div>
+                    <div class="inl account"><span class="account_list"><a href="#">my account</a></span></div>
+
+                    <div class="container-2">
+                        <span class="icon"><i class="fa fa-search"></i></span>
+                        <input type="search" id="search" placeholder="Поиск..." />
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <section>
+        <div class="wrapper">
+            <nav>
+                <div class="logo">
+                    <img src="/img/logo.png">
+                </div>
+
+                <div class="basket">
+                    <div class="basket_title">Your cart</div>
+                    <div class="bascet_count">0 items  -  $0</div>
+                    <span class="products_cart">
+                            Нет товаров
+                        </span>
+                </div>
+                <div class="menu_list">
+                    <span>menu</span><button class="top_menu"><img src="img/icons/rounded-rectangle-2-copy-2.png"></button>
+                    <ul class="menu">
+                        <li class="menu_list_hover1"><a href="javascript:void(0);">new</a>
+                            <ul class="new_list">
+                                <li ><a href="#">new style(2017)</a></li>
+                                <li><a href="#">next spring(2017)</a></li>
+                                <li><a href="#">next winter(2017)</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="javascript:void(0);">designers</a>
+                            <ul class="new_list">
+                                <li ><a href="#">fashion designer</a></li>
+                                <li><a href="#">draftsman</a></li>
+                                <li><a href="#">developer</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="javascript:void(0);">women</a>
+                            <ul class="new_list">
+                                <li ><a href="#">women style(2017)</a></li>
+                                <li><a href="#">women spring(2017)</a></li>
+                                <li><a href="#">women winter(2017)</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="javascript:void(0);">men</a>
+                            <ul class="new_list">
+                                <li ><a href="#">men style(2017)</a></li>
+                                <li><a href="#">men spring(2017)</a></li>
+                                <li><a href="#">men winter(2017)</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="javascript:void(0);">clearence</a>
+                            <ul class="new_list">
+                                <li><a href="#">show more Sale</a> </li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+            </nav>
+        </div>
+    </section>
+    <section>
+        <div class="wrapper">
+            <div class="slider_wrap">
+                <div class="slider">
+                    <div class="slider_cont">
+                        <div class="cont__inner"></div>
+                        <div class="slider_content">
+                            <img  class="slide showing" src="img/2-layersss.png">
+                            <div class="seder_title">
+                                <p class="seder_title_top">Open Heart Top</p>
+                                <span class="slider_price">$13.95</span>
+                                <p class="slider_text">This is Photoshop's version  of Lorem Ipsum.
+                                    Proin gravida nibh vel velit auctor aliquet. Aenean sollicitudin,
+                                    lorem quis bibendum auctor, nisi elit consequat ipsum, nec sagittis sem nibh id elit.
+                                    Duis sed odio sit amet nibh vulputate cursus a sit amet mauris.
+                                    Morbi accumsan ipsum velit.
+                                    Nam nec tellus a odio tincidunt auctor a ornare odio. </p>
+                                <span class="product_add_to_cart_r"><a href="">купить</a></span>
+                            </div>
+                        </div>
+                        <div class="buttom_left_sl"><a href="javascript:void(0);" id="previos"><img src="img/icons/rectangle-5-copy.png"></a></div>
+                        <div class="buttom_right"><a href="javascript:void(0);" id="next"><img src="img/icons/rectangle-5-copy-2.png"></a></div>
+                    </div>
+                </div>
+                <div class="nav_round">
+                    <ul>
+                        <li class="list_slide red"><a href="#"></a></li>
+                        <li class="list_slide"><a href="#"></a></li>
+                        <li class="list_slide"><a href="#"></a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section>
+        <div class="wrapper">
+            <div class="products_content">
+                <div class="products_content_left">
+                    <div class="pagination">
+                        <div class="pagination_count">Показанны<span class="pag_ot_do">1-9</span>  из  <span class="total_count">347</span> результатов</div>
+                        <ul>
+                            <li class="active_pag"><a href="#">1</a></li>
+                            <li><a href="#">2</a></li>
+                            <li><a href="#">3</a></li>
+                            <li class="last_pag"><a href="#"><i class="fa fa-chevron-right" aria-hidden="true"></i></a></li>
+                        </ul>
+                    </div>
+                    <div class="hr"></div>
+                    <div class="centred">
+                        <div class="product_r">
+                            <img src="img/layer-39.jpg" alt="Фото товара" title="Изображение">
+                            <span class="title_r">MIMOSA LACE DRESS</span>
+                            <div class="price"><span class="price_val_r">$</span><span class="product_price_r">76.95</span></div>
+                            <span class="product_add_to_cart_r"><a href="">купить</a></span>
+                            <span class="into_bascet"><a href="" class="disabled">в корзине</a></span>
+                        </div>
+                        <div class="product_r">
+                            <img src="img/layer-40.jpg" alt="Фото товара" title="Изображение">
+                            <span class="title_r">MIMOSA LACE DRESS</span>
+                            <div class="price"><span class="price_val_r">$</span><span class="product_price_r">76.95</span></div>
+                            <span class="product_add_to_cart_r"><a href="">купить</a></span>
+                            <span class="into_bascet"><a href="" class="disabled">в корзине</a></span>
+                        </div>
+                        <div class="product_r">
+                            <img src="img/layer-41.jpg" alt="Фото товара" title="Изображение">
+                            <span class="title_r">MIMOSA LACE DRESS</span>
+                            <div class="price"><span class="price_val_r">$</span><span class="product_price_r">76.95</span></div>
+                            <span class="product_add_to_cart_r"><a href="">купить</a></span>
+                            <span class="into_bascet"><a href="" class="disabled">в корзине</a></span>
+                        </div>
+                        <div class="product_r">
+                            <img src="img/layer-42.jpg" alt="Фото товара" title="Изображение">
+                            <span class="title_r">MIMOSA LACE DRESS</span>
+                            <div class="price"><span class="price_val_r">$</span><span class="product_price_r">76.95</span></div>
+                            <span class="product_add_to_cart_r"><a href="">купить</a></span>
+                            <span class="into_bascet"><a href="" class="disabled">в корзине</a></span>
+                        </div>
+                        <div class="product_r">
+                        <img src="img/layer-46.jpg" alt="Фото товара" title="Изображение">
+                        <span class="title_r">MIMOSA LACE DRESS</span>
+                        <div class="price"><span class="price_val_r">$</span><span class="product_price_r">76.95</span></div>
+                            <span class="product_add_to_cart_r"><a href="">купить</a></span>
+                            <span class="into_bascet"><a href="" class="disabled">в корзине</a></span>                    </div>
+                        <div class="product_r">
+                            <img src="img/layer-8.png" alt="Фото товара" title="Изображение">
+                            <span class="title_r">MIMOSA LACE DRESS</span>
+                            <div class="price"><span class="price_val_r">$</span><span class="product_price_r">76.95</span></div>
+                            <span class="product_add_to_cart_r"><a href="">купить</a></span>
+                            <span class="into_bascet"><a href="" class="disabled">в корзине</a></span>
+                        </div>
+                    </div>
+                    <div class="pagination">
+                        <div class="pagination_count">Показанны<span class="pag_ot_do">1-9</span>  из  <span class="total_count">347</span> результатов</div>
+                        <ul>
+                            <li class="active_pag"><a href="#">1</a></li>
+                            <li><a href="#">2</a></li>
+                            <li><a href="#">3</a></li>
+                            <li class="last_pag"><a href="#"><i class="fa fa-chevron-right" aria-hidden="true"></i></a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="products_menu">
+                    <div class="products_menu_title">
+                       <h2> categories</h2>
+                        <div id="menu_body">
+                            <ul>
+                                <li class="menu_icons_o"><a name="ancor" href="#" onclick="openMenu('sub_menu_1');return(false)">Новинки</a>
+                                    <ul id="sub_menu_1">
+                                        <li><a href="#">Одежда</a></li>
+                                        <li><a href="#">Обувь</a></li>
+                                    </ul>
+                                </li>
+                                <li class="menu_icons_o"><a name="ancor" href="#" onclick="openMenu('sub_menu_2');return(false)">Эксклюзивные модели</a>
+                                    <ul id="sub_menu_2">
+                                        <li><a href="#">Одежда</a></li>
+                                        <li><a href="#">Обувь</a></li>
+                                    </ul>
+                                </li>
+                                <li class="menu_icons_o"><a name="ancor" href="#" onclick="openMenu('sub_menu_3');return(false)">Женщины</a>
+                                    <ul id="sub_menu_3">
+                                        <li><a href="#">Одежда</a></li>
+                                        <li><a href="#">Обувь</a></li>
+                                        <li><a href="#">Аксессуары</a></li>
+                                    </ul>
+                                </li>
+                                <li class="menu_icons_o"><a name="ancor" href="#" onclick="openMenu('sub_menu_4');return(false)">Мужчины</a>
+                                    <ul id="sub_menu_4">
+                                        <li><a href="#">Одежда</a></li>
+                                        <li><a href="#">Обувь</a></li>
+                                        <li><a href="#">Аксессуары</a></li>
+                                    </ul>
+                                </li>
+                                <li class="menu_icons_o"><a name="ancor" href="#" onclick="openMenu('sub_menu_5');return(false)">Белье</a>
+                                    <ul id="sub_menu_5">
+                                        <li><a href="#">Мужчины</a></li>
+                                        <li><a href="#">Женщины</a></li>
+                                    </ul>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <div class="polzunok">
+                        <p>
+                            <label for="amount">Диапазон цен:</label>
+                            <input type="text" id="amount" readonly style="width: 70px; border:0; color:#f6931f; font-weight:bold;">
+                        </p>
+                        <div id="slider-range"></div>
+                        <button class="filtr_buut">Фильтр</button>
+                        <span class="size-title">Выберите размер</span>
+                        <ul class="size">
+                            <li><a href="javascript:void (0);">s</a></li>
+                            <li><a href="javascript:void (0);">m</a></li>
+                            <li><a href="javascript:void (0);">l</a></li>
+                            <li><a href="javascript:void (0);">xl</a></li>
+                            <li><a href="javascript:void (0);">xxl</a></li>
+                        </ul>
+                    </div>
+                    <div class="block_sale">
+                        <h2>Товары на акции</h2>
+                        <div class="product_onsale">
+                           <a href=""> <img src="img/layer-32.png"></a>
+                            <div class="product_onsale_text">
+                                <span class="product_onsale_title"><a href="">PINTUCK TANK</a></span><br>
+                                <span class="last_price">$45.55</span><br>
+                                <span class="new_price">$45.55</span><br>
+                                <span class="product_add_to_cart_r"><a href="">купить</a></span>
+                                <span class="into_bascet"><a href="" class="disabled">в корзине</a></span>
+                            </div>
+                        </div>
+                        <div class="product_onsale">
+                            <a href=""> <img src="img/layer-33.jpg"></a>
+                            <div class="product_onsale_text">
+                                <span class="product_onsale_title"><a href="">PINTUCK TANK</a></span><br>
+                                <span class="last_price">$45.55</span><br>
+                                <span class="new_price">$45.55</span><br>
+                                <span class="product_add_to_cart_r"><a href="">купить</a></span>
+                                <span class="into_bascet"><a href="" class="disabled">в корзине</a></span>
+                            </div>
+                        </div>
+                        <div class="product_onsale">
+                            <a href=""> <img src="img/layer-34.jpg"></a>
+                            <div class="product_onsale_text">
+                                <span class="product_onsale_title"><a href="">PINTUCK TANK</a></span><br>
+                                <span class="last_price">$45.55</span><br>
+                                <span class="new_price">$45.55</span><br>
+                                <span class="product_add_to_cart_r"><a href="">купить</a></span>
+                                <span class="into_bascet"><a href="" class="disabled">в корзине</a></span>                            </div>
+                        </div>
+                    </div>
+                    <div class="block_sale">
+                        <h2>Популярные товары</h2>
+                        <div class="product_onsale">
+                            <a href=""> <img src="img/layer-32.png"></a>
+                            <div class="product_onsale_text">
+                                <span class="product_onsale_title"><a href="">PINTUCK TANK</a></span><br>
+                                <span class="new_price">$45.55</span><br>
+<span class="product_add_to_cart_r"><a href="">купить</a></span>
+                                    <span class="into_bascet"><a href="" class="disabled">в корзине</a></span>
+                            </div>
+                        </div>
+                        <div class="product_onsale">
+                            <a href=""> <img src="img/layer-33.jpg"></a>
+                            <div class="product_onsale_text">
+                                <span class="product_onsale_title"><a href="">PINTUCK TANK</a></span><br>
+                                <span class="new_price">$45.55</span><br>
+<span class="product_add_to_cart_r"><a href="">купить</a></span>
+                                    <span class="into_bascet"><a href="" class="disabled">в корзине</a></span>
+                            </div>
+                        </div>
+                        <div class="product_onsale">
+                            <a href=""> <img src="img/layer-34.jpg"></a>
+                            <div class="product_onsale_text">
+                                <span class="product_onsale_title"><a href="">PINTUCK TANK</a></span><br>
+                                <span class="new_price">$45.55</span><br>
+<span class="product_add_to_cart_r"><a href="">купить</a></span>
+                                    <span class="into_bascet"><a href="" class="disabled">в корзине</a></span>
+                            </div>
+                        </div>
+                    </div>
+
+
+                </div>
+            </div>
+        </div>
+    </section>
+<section>
+    <footer>
+        <div class="footer_list">
+            <ul class="footer_customer">
+                <li>Customer Service</li>
+                <li>Contact </li>
+                <li>FAQ </li>
+                <li>Terms of payment </li>
+                <li>Terms of sale Deliver </li>
+                <li>terms and conditions  </li>
+                <li>Returns and Refunds  </li>
+            </ul>
+            <ul class="footer_info">
+                <li>Information</li>
+                <li>Affiliate  </li>
+                <li>Cookies</li>
+                <li>How to Shop About </li>
+                <li> About  </li>
+                <li>Investor relations  </li>
+            </ul>
+            <ul class="footer_camp">
+                <li>Campaigns </li>
+                <li>Evening dresses  </li>
+                <li> Makeup  </li>
+                <li>Fashion forward training  </li>
+                <li> clothes </li>
+                <li> Special Occasion Dresses </li>
+            </ul>
+            <ul class="fooret_sity">
+                <li>Stores</li>
+                <li>Paris </li>
+                <li>New York </li>
+                <li> New York London  </li>
+                <li>Madrid   </li>
+                <li>Tokio   </li>
+            </ul>
+            <ul class="social_footer">
+                <li>Social</li>
+                <li><span class="twitt">
+                            <a href="#"><img src="img/icons/vector-smart-objectr.png"></a>
+                        </span><span class="ramb">
+                             <a href="#"><img src="img/icons/vector-smart-objecte.png"></a>
+                        </span><span class="face">
+                             <a href="#"><img src="img/icons/vector-smart-objectw.png"></a>
+                        </span></li>
+                <li><span class="googl">
+                            <a href="#"><img src="img/icons/vector-smart-objectg.png"></a>
+                        </span><span class="t">
+                           <a href="#"><img src="img/icons/vector-smart-objecttt.png"></a>
+                        </span><span class="vk">
+                            <a href="#"><img src="img/icons/vector-smart-objectvv.png"></a>
+                        </span></li>
+            </ul>
+            <ul class="footer_icons">
+                <li><img src="img/icons/5-layers.png"></li>
+            </ul>
+        </div>
+        <div class="footer_adapt">
+          <div class="wrapper">
+              <button class="bottom_menu"><img src="img/icons/rounded-rectangle-2-copy-3.png"></button>
+              <ul class="footer_adapt_list">
+                  <li><a href="#">Главная</a></li>
+                  <li><a href="#">О нас</a></li>
+                  <li><a href="#">Способы оплаты</a></li>
+                  <li><a href="#">Контакты</a></li>
+                  <li><a href="#">Партнерам</a></li>
+              </ul>
+              <span class="copy">&copy;LookShop.com</span>
+          </div>
+        </div>
+    </footer>
+</section>
+</div>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<script type="text/javascript" src="libs/slick/slick.min.js"></script>
+<script src="js/wow.min.js"></script>
+<script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+<script src="js/jqyery.js"></script>
+<script src="js/custom.js"></script>
+<script>
+    new WOW().init();
+</script>
+</body>
+</html>

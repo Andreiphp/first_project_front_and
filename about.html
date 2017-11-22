@@ -1,0 +1,300 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width initial-scale=1.0">
+    <title>Slider</title>
+    <link rel="stylesheet" type="text/css" href="css/normalize.css" >
+    <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="css/style.css" >
+    <link rel="stylesheet" type="text/css" href="css/animate.min.css">
+    <link rel="stylesheet" type="text/css" href="css/media.css" >
+    <link rel="stylesheet" type="text/css" href="libs/slick/slick.css"/>
+    <link rel="stylesheet" type="text/css" href="libs/slick/slick-theme.css"/>
+    <link rel="stylesheet" href="https://code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+</head>
+<script type="text/javascript">
+    var id_menu = new Array('sub_menu_1','sub_menu_2','sub_menu_3');
+    startList = function allclose() {
+        for (i=0; i < id_menu.length; i++){
+            document.getElementById(id_menu[i]).style.display = "none";
+        }
+    };
+    function openMenu(id){
+        for (i=0; i < id_menu.length; i++){
+            if (id != id_menu[i]){
+                document.getElementById(id_menu[i]).style.display = "none";
+            }
+        }
+        if (document.getElementById(id).style.display == "block"){
+            document.getElementById(id).style.display = "none";
+        }else{
+            document.getElementById(id).style.display = "block";
+        }
+    }
+    window.onload = startList;
+</script>
+<body>
+<div class="main">
+    <div class="header">
+        <div class="wrapper">
+            <div class="header_content">
+                <div class="care inl"><span>custom care:</span><span class="care_tel">888-23-4567</span></div>
+                <div class="right">
+                    <div class=" inl select">
+                        <form method="get">
+                            <select id="phone" name="phone">
+                                <option selected value="us">US</option>
+                                <option value="rub">RUB</option>
+                                <option value="byn">BYN</option>
+                                <option value="eur">EUR</option>
+                            </select>
+                        </form>
+                    </div>
+                    <div class="inl account"><span class="account_list"><a href="#">my account</a></span></div>
+
+                    <div class="container-2">
+                        <span class="icon"><i class="fa fa-search"></i></span>
+                        <input type="search" id="search" placeholder="Поиск..." />
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <section>
+        <div class="wrapper">
+            <nav>
+                <div class="logo">
+                    <img src="/img/logo.png">
+                </div>
+
+                <div class="basket">
+                    <div class="basket_title">Your cart</div>
+                    <div class="bascet_count">0 items  -  $0</div>
+                    <span class="products_cart">
+                            Нет товаров
+                        </span>
+                </div>
+                <div class="menu_list">
+                    <span>menu</span><button class="top_menu"><img src="img/icons/rounded-rectangle-2-copy-2.png"></button>
+                    <ul class="menu">
+                        <li class="menu_list_hover1"><a href="javascript:void(0);">new</a>
+                            <ul class="new_list">
+                                <li ><a href="#">new style(2017)</a></li>
+                                <li><a href="#">next spring(2017)</a></li>
+                                <li><a href="#">next winter(2017)</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="javascript:void(0);">designers</a>
+                            <ul class="new_list">
+                                <li ><a href="#">fashion designer</a></li>
+                                <li><a href="#">draftsman</a></li>
+                                <li><a href="#">developer</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="javascript:void(0);">women</a>
+                            <ul class="new_list">
+                                <li ><a href="#">women style(2017)</a></li>
+                                <li><a href="#">women spring(2017)</a></li>
+                                <li><a href="#">women winter(2017)</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="javascript:void(0);">men</a>
+                            <ul class="new_list">
+                                <li ><a href="#">men style(2017)</a></li>
+                                <li><a href="#">men spring(2017)</a></li>
+                                <li><a href="#">men winter(2017)</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="javascript:void(0);">clearence</a>
+                            <ul class="new_list">
+                                <li><a href="#">show more Sale</a> </li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+            </nav>
+        </div>
+    </section>
+
+    <section >
+        <div class="first_block">
+            <p class="text1">
+                Интернет-магазин<br>
+                LookShop
+            </p>
+            <p class="text2">
+                Из года в год наша команда стремится к лучшему,<br>
+
+                чтобы радовать Вас каждый день!
+            </p>
+        </div>
+    </section>
+    <section id="second_block">
+        <div class="second_block">
+            <p class="text3">О компании</p>
+            <p class="text4">
+                LookShop – один из крупнейших интернет-магазинов модной одежды, обуви,<br>
+
+                аксессуаров, существующий уже 12 лет! Из года в год мы<br>
+
+                продолжаем развиваться, расширять географию присутствия и улучшать<br>
+
+                качество обслуживания, чтобы радовать Вас каждый день!
+            </p>
+        </div>
+    </section>
+    <section>
+        <p class="about_title">Ключ к нашему успеху – LookShop people</p>
+        <div class="boss">
+            <div class="boss_item"><img src="img/robrt-cov.jpg">
+                <p>Роберт Дауни</p><br>
+                <p>Соучредитель,управляющий</p>
+            </div>
+            <div class="boss_item"><img src="img/jeremy-depan.jpg ">
+                <p>ДЖЕРЕМИ РЕННЕР</p><br>
+                <p>Управляющий директор</p></div>
+            <div class="boss_item"><img src="img/1458421_1424526310452_full.jpg ">
+                <p>Крисс Эванс</p><br>
+                <p>Управляющий директор</p></div>
+            <div class="boss_item"><img src="img/040613822.JPG">
+                <p>Локи</p><br>
+                <p>Идейный вдохновитель</p></div>
+        </div>
+
+        <div class="about_job">
+            В LookShop мы уверены: люди, увлеченные своей работой, делают ее лучше. Поэтому мы с готовностью обсуждаем новые идеи и поощряем профессиональное развитие.
+            В LookShop ценятся дружеские отношения в коллективе. Мы не только работаем, но и отдыхаем вместе: играем в футбол, отмечаем праздники и веселимся на наших вечеринках.
+        </div>
+    </section>
+    <section>
+        <div class="rekvizity">
+            <div class="left_rec">
+                <span>Реквизиты<br> компании</span>
+            </div>
+            <div class="right_rec">
+                <div class="right_rec_left">
+                    <p>Полное наименование:</p>
+                    <hr>
+                    <p>Адрес для приема возвратов и корреспонденции:</p>
+                    <hr>
+                    <p>Директор</p>
+                    <hr>
+                    <p>Наименование банка:</p><br>
+                    <hr>
+                    <p>Код (БИК)</p>
+                    <hr>
+                    <p>УНП:</p>
+                    <hr>
+                    <p>Расчетный счет:</p>
+                </div>
+                <div class="right_rec_right">
+                    <p>Общество с ограниченной ответственностью</p>
+                    <hr>
+                    <p>220073, Республика Беларусь, г. Минск,<br>
+                        ул. Скрыганова, д. 6А, пом. 14, комн. 37.</p>
+                    <hr>
+                    <p> Видник Андрей Владимирович</p>
+                    <hr>
+                    <p> Филиал № 258 - Минское областное управление, ЗАО</p>
+                    <p>
+                        «Армяно - Грузинский Нефтебанк», 210015, г.Витебск, ул.Ленина, 10б.
+                    </p>
+                    <hr>
+                    <p> 150801635</p>
+                    <hr>
+                    <p> 301000074446</p>
+                    <hr>
+                    <p> 300000006</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+
+
+    <section>
+        <footer>
+            <div class="footer_list">
+                <ul class="footer_customer">
+                    <li>Customer Service</li>
+                    <li>Contact </li>
+                    <li>FAQ </li>
+                    <li>Terms of payment </li>
+                    <li>Terms of sale Deliver </li>
+                    <li>terms and conditions  </li>
+                    <li>Returns and Refunds  </li>
+                </ul>
+                <ul class="footer_info">
+                    <li>Information</li>
+                    <li>Affiliate  </li>
+                    <li>Cookies</li>
+                    <li>How to Shop About </li>
+                    <li> About  </li>
+                    <li>Investor relations  </li>
+                </ul>
+                <ul class="footer_camp">
+                    <li>Campaigns </li>
+                    <li>Evening dresses  </li>
+                    <li> Makeup  </li>
+                    <li>Fashion forward training  </li>
+                    <li> clothes </li>
+                    <li> Special Occasion Dresses </li>
+                </ul>
+                <ul class="fooret_sity">
+                    <li>Stores</li>
+                    <li>Paris </li>
+                    <li>New York </li>
+                    <li> New York London  </li>
+                    <li>Madrid   </li>
+                    <li>Tokio   </li>
+                </ul>
+                <ul class="social_footer">
+                    <li>Social</li>
+                    <li><span class="twitt">
+                            <a href="#"><img src="img/icons/vector-smart-objectr.png"></a>
+                        </span><span class="ramb">
+                             <a href="#"><img src="img/icons/vector-smart-objecte.png"></a>
+                        </span><span class="face">
+                             <a href="#"><img src="img/icons/vector-smart-objectw.png"></a>
+                        </span></li>
+                    <li><span class="googl">
+                            <a href="#"><img src="img/icons/vector-smart-objectg.png"></a>
+                        </span><span class="t">
+                           <a href="#"><img src="img/icons/vector-smart-objecttt.png"></a>
+                        </span><span class="vk">
+                            <a href="#"><img src="img/icons/vector-smart-objectvv.png"></a>
+                        </span></li>
+                </ul>
+                <ul class="footer_icons">
+                    <li><img src="img/icons/5-layers.png"></li>
+                </ul>
+            </div>
+            <div class="footer_adapt">
+                <div class="wrapper">
+                    <button class="bottom_menu"><img src="img/icons/rounded-rectangle-2-copy-3.png"></button>
+                    <ul class="footer_adapt_list">
+                        <li><a href="#">Главная</a></li>
+                        <li><a href="#">О нас</a></li>
+                        <li><a href="#">Способы оплаты</a></li>
+                        <li><a href="#">Контакты</a></li>
+                        <li><a href="#">Партнерам</a></li>
+                    </ul>
+                    <span class="copy">&copy;LookShop.com</span>
+                </div>
+            </div>
+        </footer>
+    </section>
+</div>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<script type="text/javascript" src="libs/slick/slick.min.js"></script>
+<script src="js/wow.min.js"></script>
+<script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+<script src="js/jqyery.js"></script>
+<script src="js/custom.js"></script>
+<script>
+    new WOW().init();
+</script>
+</body>
+</html>
