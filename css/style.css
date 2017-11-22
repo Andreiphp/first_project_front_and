@@ -6,7 +6,7 @@ html,body{
     width: 100%;
 }
 *{
-    color: black;
+    color: white;
 }
 @font-face {
     font-family: Arial - Bold MT; /* Гарнитура шрифта */
@@ -120,7 +120,7 @@ html,body{
     left: 10px;
     width: 17px;
     height: 15px;
-    background: url(/img/icons/contact---user.png) no-repeat;
+    background: url(img/icons/contact---user.png) no-repeat;
 }
 .icon_search{
     width: 34px;
@@ -272,10 +272,10 @@ nav:after{
     right: -14px;
     width: 9px;
     height: 5px;
-    background: url(/img/icons/pix1.png) no-repeat;
+    background: url(img/icons/pix1.png) no-repeat;
 }
 .menu_list li:hover:after{
-    background: url(/img/icons/pix2.png) no-repeat;
+    background: url(img/icons/pix2.png) no-repeat;
 }
 
 .menu li .new_list{
@@ -372,7 +372,7 @@ display: block;  z-index: 200;
     display: block;
     width: 9px;
     height: 6px;
-    background: url("/img/icons/pixel-iconz-r4-c19-copy-5.png") no-repeat;
+    background: url("img/icons/pixel-iconz-r4-c19-copy-5.png") no-repeat;
 }
 
 .basket:before{
@@ -383,7 +383,7 @@ display: block;  z-index: 200;
     display: block;
     width: 20px;
     height: 20px;
-    background: url(/img/icons/vector-smart-object.png) no-repeat;
+    background: url(img/icons/vector-smart-object.png) no-repeat;
 
 }
 
@@ -606,19 +606,19 @@ input[type=text]{
 .facebook{
     width: 49px;
     height: 58px;
-    background: url("/img/icons/shape-2.png") no-repeat center;
+    background: url("img/icons/shape-2.png") no-repeat center;
     background-color: #f7f7f7;
 }
 .twitter{
     width: 55px;
     height: 58px;
-    background: url("/img/icons/shape-3.png") no-repeat center;
+    background: url("img/icons/shape-3.png") no-repeat center;
     background-color: #ededed;
 }
 .last-soc{
     width: 58px;
     height: 58px;
-    background: url("/img/icons/shape-4.png") no-repeat center ;
+    background: url("img/icons/shape-4.png") no-repeat center ;
     background-color: #f7f7f7;
 }
 .content{
@@ -768,14 +768,14 @@ input[type=text]{
     display: inline-block;
     width: 45px;
     height: 45px;
-    background: url("/img/icons/pixel-arrows-r2-c2-copy-4.png") no-repeat center;
+    background: url("img/icons/pixel-arrows-r2-c2-copy-4.png") no-repeat center;
     background-color: #f2f2f2;
 }
 .slider_butto_bot span:last-child{
     display: inline-block;
     width: 45px;
     height: 45px;
-    background: url("/img/icons/pixel-arrows-r2-c2-copy-3.png") no-repeat center;
+    background: url("img/icons/pixel-arrows-r2-c2-copy-3.png") no-repeat center;
     background-color: #ffa687;
 }
 .slider_body{
@@ -994,7 +994,7 @@ input[type=text]{
     position: relative;
     width: 165px;
     height: 157px;
-    background: url(/img/6-layers.png) no-repeat center;
+    background: url(img/6-layers.png) no-repeat center;
     z-index:800;
 }
 .chanj_icon span{
@@ -1304,7 +1304,7 @@ color: #ffffff;
     right: 9px;
     width: 9px;
     height: 9px;
-    background: url(/img/rectangle-25.png) no-repeat center;
+    background: url(img/rectangle-25.png) no-repeat center;
 }
 .menu_icons_close:after{
     content: '';
@@ -1314,7 +1314,7 @@ color: #ffffff;
     right: 9px;
     width: 9px;
     height: 9px;
-    background: url(/img/rectangle-25-copy-2.png) no-repeat center;
+    background: url(img/rectangle-25-copy-2.png) no-repeat center;
 }
 
 #menu_body ul li a {
@@ -1522,7 +1522,7 @@ color: #ffffff;
     width: 24px;
     height: 24px;
 
-    background: url("/img/icons/2-layerswe.png") center;
+    background: url("img/icons/2-layerswe.png") center;
 }
 
 
@@ -1608,7 +1608,7 @@ float: left;
     max-width: 1200px;
     height: 550px;
     margin: 0 auto;
-    background: url("/img/layer-50.jpg") center;
+    background: url("img/layer-50.jpg") center;
     position: relative;
     text-align: center;
 }
@@ -1634,7 +1634,7 @@ float: left;
     height: 400px;
     max-width: 1200px;
     margin: 0 auto;
-    background: url("/img/bc.jpg") center;
+    background: url("img/bc.jpg") center;
     text-align: left;
     overflow: hidden;
 
@@ -2037,7 +2037,7 @@ color: #0a0a0a;
 }
 .gerls{
     height: 350px;
-    background: url("/img/Girls.png")  no-repeat fixed center;
+    background: url("img/Girls.png")  no-repeat fixed center;
     background-size: cover;
     position: relative;
 }
@@ -2198,6 +2198,5 @@ list-style-type: none;
     display: none;
 }
 .copy{
-
     text-align: right;
 }
