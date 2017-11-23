@@ -371,7 +371,7 @@ display: block;  z-index: 200;
     display: block;
     width: 9px;
     height: 6px;
-    background: url("img/icons/pixel.png") no-repeat;
+    background: url(img/icons/pixel.png) no-repeat;
 }
 
 .basket:before{
@@ -767,14 +767,14 @@ input[type=text]{
     display: inline-block;
     width: 45px;
     height: 45px;
-    background: url("img/icons/pixel-arrows-r2.png") no-repeat center;
+    background: url(img/icons/pixel-arrows-r2.png) no-repeat center;
     background-color: #f2f2f2;
 }
 .slider_butto_bot span:last-child{
     display: inline-block;
     width: 45px;
     height: 45px;
-    background: url("img/icons/pixel-arrows-r3.png") no-repeat center;
+    background: url(img/icons/pixel-arrows-r3.png) no-repeat center;
     background-color: #ffa687;
 }
 .slider_body{
@@ -993,7 +993,7 @@ input[type=text]{
     position: relative;
     width: 165px;
     height: 157px;
-    background: url('andreiphp.github.io/img/6-layers.png') no-repeat center;
+    background: url(img/6-layers.png) no-repeat center;
     z-index:800;
 }
 .chanj_icon span{
@@ -1521,7 +1521,7 @@ color: #ffffff;
     width: 24px;
     height: 24px;
 
-    background: url("img/icons/2-layerswe.png") center;
+    background: url(img/icons/2-layerswe.png) center;
 }
 
 
@@ -1605,9 +1605,9 @@ float: left;
 
 .first_block{
     max-width: 1200px;
-    height: 550px;
+    height: 244px;
     margin: 0 auto;
-    background: url("img/layer-50.jpg") center;
+    background: url(/img/background-about.png) no-repeat top;
     position: relative;
     text-align: center;
 }
@@ -1629,15 +1629,6 @@ float: left;
     line-height: 30px;
 }
 
-.second_block{
-    height: 400px;
-    max-width: 1200px;
-    margin: 0 auto;
-    background: url("img/bc.jpg") center;
-    text-align: left;
-    overflow: hidden;
-
-}
 .text3{
     font-family: Arial,sans-serif;
     text-indent: 25px;
@@ -1667,46 +1658,51 @@ float: left;
     height: 440px;
     margin:  0 auto;
 }
-.boss{
-    display: flex;
-    justify-content: center;
-    flex-wrap: wrap;
+
+.who_we_are{
+    font-family: "Century Schoolbook";
     max-width: 1200px;
     margin: 0 auto;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    background: linear-gradient(to bottom, #fd926d 0% , #d64c19 100%);
+    text-shadow: 1px 2px #000;
+    box-shadow: 4px 4px 10px 0px #fd7b56;
+   
 }
-.boss_item img{
-    border: 1px solid transparent;
-    border-radius:50% ;
-}
-.boss_item{
+.who_we_are_title{
+
+    font-size: 50px;
     text-align: center;
-    margin-right: 20px;
+    padding: 10px;
 }
-.boss_item p{
-color: #0a0a0a;
-}
-.about_title{
-    text-align: center;
-    line-height: 42px;
-    padding-top: 20px;
-    padding-bottom: 20px;
-    color: #0a0a0a;
-    font-weight: bold;
+.who_we_are_text{
+    padding: 10px 50px;
     font-size: 30px;
 }
+.who_we_are_list{
+    list-style-type: decimal!important;
 
-.about_job{
-    max-width: 1200px;
-    margin: 0 auto;
-    text-align: center;
-    margin-top: 40px;
-    margin-bottom: 50px;
-    padding: 20px 0;
-    font-size: 20px;
-    color: #0a0a0a;
-    border-top: 1px solid #6b6b6b;
-    border-bottom: 1px solid #6b6b6b;
 }
+.who_we_are_list li{
+
+    font-size: 30px;
+    padding: 10px;
+    padding-left: 20px;
+    text-decoration: overline;
+}
+.about_title{
+    color: rgba(255, 255, 255, 0.64);
+    font-family: "Century Schoolbook";
+    font-size: 70px;
+    font-weight: 700;
+    padding-top: 50px;
+    line-height: 65.95px;
+    text-transform: uppercase;
+    letter-spacing: 2.56px;
+    text-shadow: 1px 2px #000;
+}
+
 .rekvizity{
     display: flex;
     max-width: 1200px;
@@ -1721,7 +1717,7 @@ color: #0a0a0a;
     font-size: 35px;
     color: #ffffff;
     position: relative;
-    background: #fd926d;
+    background: linear-gradient(to bottom, #fd926d 0% , #d64c19 100%);
     text-align: center;
     width: 40%;
     padding-top: 120px;
@@ -2036,7 +2032,7 @@ color: #0a0a0a;
 }
 .gerls{
     height: 350px;
-    background: url("img/Girls.png")  no-repeat fixed center;
+    background: url(img/Girls.png)  no-repeat fixed center;
     background-size: cover;
     position: relative;
 }
