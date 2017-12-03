@@ -218,7 +218,7 @@ html,body{
     left: 10px;
     width: 17px;
     height: 15px;
-    background: url(img/icons/contact_user.png) no-repeat;
+    background: url(../img/icons/contact_user.png) no-repeat;
 }
 .icon_search{
     width: 34px;
@@ -372,10 +372,10 @@ nav:after{
     right: -14px;
     width: 9px;
     height: 5px;
-    background: url(img/icons/pix1.png) no-repeat;
+    background: url(../img/icons/pix1.png) no-repeat;
 }
 .menu_list li:hover:after{
-    background: url(img/icons/pix2.png) no-repeat;
+    background: url(../img/icons/pix2.png) no-repeat;
 }
 
 .menu li .new_list{
@@ -479,7 +479,7 @@ nav:after{
     display: block;
     width: 9px;
     height: 6px;
-    background: url(img/icons/pixel.png) no-repeat;
+    background: url(../img/icons/pixel.png) no-repeat;
 }
 
 .basket:before{
@@ -490,7 +490,7 @@ nav:after{
     display: block;
     width: 20px;
     height: 20px;
-    background: url(img/icons/vector-smart-object.png) no-repeat;
+    background: url(../img/icons/vector-smart-object.png) no-repeat;
 
 }
 
@@ -544,7 +544,7 @@ nav:after{
     height: 100%;
     background: #d6d2cd;
     color: rgba(255, 255, 255, 0.56);
-    background: url("/img/icons/arrow_left.svg") no-repeat;
+    background: url("../img/icons/arrow_left.svg") no-repeat;
 
 }
 .slider_wrap .slick-next:after{
@@ -554,7 +554,7 @@ nav:after{
     height: 100%;
     background: #d6d2cd;
     color: rgba(255, 255, 255, 0.56);
-    background: url("/img/icons/arroe-right.svg") no-repeat;
+    background: url("../img/icons/arroe-right.svg") no-repeat;
 }
 .find_us{
     height: 58px;
@@ -634,19 +634,19 @@ input[type=text]{
 .facebook{
 
     height: 58px;
-    background: url("img/icons/shape-2.png") no-repeat center;
+    background: url("../img/icons/shape-2.png") no-repeat center;
     background-color: #f7f7f7;
 }
 .twitter{
 
     height: 58px;
-    background: url("img/icons/shape-3.png") no-repeat center;
+    background: url("../img/icons/shape-3.png") no-repeat center;
     background-color: #ededed;
 }
 .last-soc{
 
     height: 58px;
-    background: url("img/icons/shape-4.png") no-repeat center ;
+    background: url("../img/icons/shape-4.png") no-repeat center ;
     background-color: #f7f7f7;
 }
 .content{
@@ -796,14 +796,14 @@ input[type=text]{
     display: inline-block;
     width: 45px;
     height: 45px;
-    background: url(img/icons/pixel-arrows-r2.png) no-repeat center;
+    background: url(../img/icons/pixel-arrows-r2.png) no-repeat center;
     background-color: #f2f2f2;
 }
 .slider_butto_bot span:last-child{
     display: inline-block;
     width: 45px;
     height: 45px;
-    background: url(img/icons/pixel-arrows-r3.png) no-repeat center;
+    background: url(../img/icons/pixel-arrows-r3.png) no-repeat center;
     background-color: #ffa687;
 }
 .slider_body{
@@ -1031,7 +1031,7 @@ input[type=text]{
     position: relative;
     width: 165px;
     height: 157px;
-    background: url(img/6-layers.png) no-repeat center;
+    background: url(../img/6-layers.png) no-repeat center;
     z-index:800;
 }
 .chanj_icon span{
@@ -1194,7 +1194,7 @@ input[type=text]{
     display: block;
     width: 100%;
     height: 100%;
-    background: url("/img/icons/arrow_left.svg") no-repeat;
+    background: url("../img/icons/arrow_left.svg") no-repeat;
 }
 
 .slider_3 button.slick-next:after{
@@ -1202,7 +1202,7 @@ input[type=text]{
     display: block;
     width: 100%;
     height: 100%;
-    background: url("/img/icons/arroe-right.svg") no-repeat;
+    background: url("../img/icons/arroe-right.svg") no-repeat;
 }
 .products_for_slide{
     display: inline-flex!important;
@@ -1384,7 +1384,7 @@ color: #ffffff;
     right: 9px;
     width: 9px;
     height: 9px;
-    background: url(img/rectangle-25.png) no-repeat center;
+    background: url(../img/rectangle-25.png) no-repeat center;
 }
 .menu_icons_close:after{
     content: '';
@@ -1394,7 +1394,7 @@ color: #ffffff;
     right: 9px;
     width: 9px;
     height: 9px;
-    background: url(img/rectangle-25-copy-2.png) no-repeat center;
+    background: url(../img/rectangle-25-copy-2.png) no-repeat center;
 }
 
 #menu_body ul li a {
@@ -1603,7 +1603,7 @@ color: #ffffff;
     width: 24px;
     height: 24px;
 
-    background: url(img/icons/2-layerswe.png) center;
+    background: url(../img/icons/2-layerswe.png) center;
 }
 
 
@@ -1694,7 +1694,7 @@ float: left;
     max-width: 1200px;
     height: 244px;
     margin: 0 auto;
-    background: url(/img/background-about.png) no-repeat top;
+    background: url(../img/background-about.png) no-repeat top;
     position: relative;
     text-align: center;
 }
@@ -2119,7 +2119,7 @@ float: left;
 }
 .gerls{
     height: 350px;
-    background: url(img/Girls.png)  no-repeat fixed center;
+    background: url(../img/Girls.png)  no-repeat fixed center;
     background-size: cover;
     position: relative;
 }
@@ -2275,7 +2275,7 @@ float: left;
     height: 12px;
     background-color: #81807f;
     margin-left: 30px;
-    background: url("/img/icons/delete-icon.png") no-repeat center;
+    background: url("../img/icons/delete-icon.png") no-repeat center;
 }
 
 .cart_delite a{
