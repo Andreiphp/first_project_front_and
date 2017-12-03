@@ -1,0 +1,300 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width initial-scale=1.0">
+    <title>Slider</title>
+    <link rel="stylesheet" type="text/css" href="css/normalize.css" >
+    <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="css/style.css" >
+    <link rel="stylesheet" type="text/css" href="css/animate.min.css">
+    <link rel="stylesheet" type="text/css" href="css/media.css" >
+    <link rel="stylesheet" type="text/css" href="libs/slick/slick.css"/>
+    <link rel="stylesheet" type="text/css" href="libs/slick/slick-theme.css"/>
+    <link rel="stylesheet" href="https://code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+</head>
+<body>
+<div id="modal_window" class="modal_dialog">
+    <div>
+        <a href="#close" title="Закрыть" class="close">X</a>
+        <span>Если не зарегистрированны </span>   <button class="modal_button" value="registr">Зарегистрироваться</button>
+        <form class="auth"  method="post">
+            <input type="text" name="login" placeholder="введите ваш логин">
+            <input type="password" name="password" placeholder="введите ваш пароль">
+            <input type="submit" value="Войти">
+        </form>
+
+    </div>
+</div>
+<div class="main">
+    <div class="header">
+        <div class="wrapper">
+            <div class="header_content">
+                <div class="care inl"><span>телефон:</span><span class="care_tel">888-23-4567</span></div>
+                <div class="right">
+                    <div class=" inl select">
+                        <form method="get">
+                            <select id="phone" name="phone">
+                                <option selected value="us">US</option>
+                                <option value="rub">RUB</option>
+                                <option value="byn">BYN</option>
+                                <option value="eur">EUR</option>
+                            </select>
+                        </form>
+                    </div>
+                    <div class="inl account"><span class="account_list"><a href="#modal_window">личный кабинет</a></span></div>
+
+                    <div class="container-2">
+                        <span class="icon"><i class="fa fa-search"></i></span>
+                        <input type="search" id="search" placeholder="Поиск..." />
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <section>
+        <div class="wrapper">
+            <nav>
+                <div class="logo">
+                    <img src="img/logo.png" alt="logo" title="на главную">
+                </div>
+
+                <div class="basket">
+                    <div class="basket_title">Ваша корзина</div>
+                    <div class="bascet_count"><a href="">0 количество  -  $0</a></div>
+                    <span class="products_cart">
+                            Нет товаров
+                        </span>
+                </div>
+                <div class="menu_list">
+                    <span>menu</span><button class="top_menu"><img src="img/icons/rounded-rectangle-2-copy-2.png" alt="кнопка" title="открыть иеню"></button>
+                    <ul class="menu">
+                        <li class="menu_list_hover1"><a href="javascript:void(0);">Новинки сезона</a>
+                            <ul class="new_list">
+                                <li ><a href="#">новая коллекция(2017)</a></li>
+                                <li><a href="#">осень(2017)</a></li>
+                                <li><a href="#">зима(2017)</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="javascript:void(0);">Дизайнерское</a>
+                            <ul class="new_list">
+                                <li ><a href="#"></a></li>
+                                <li><a href="#">draftsman</a></li>
+                                <li><a href="#">developer</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="javascript:void(0);">Женское</a>
+                            <ul class="new_list">
+                                <li ><a href="#">нижнее белье(2017)</a></li>
+                                <li><a href="#">верхняя одежда(2017)</a></li>
+                                <li><a href="#">обувь(2017)</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="javascript:void(0);">Мужское</a>
+                            <ul class="new_list">
+                                <li ><a href="#">нижнее белье(2017)</a></li>
+                                <li><a href="#">верхняя одежда(2017)</a></li>
+                                <li><a href="#">обувь(2017)</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="javascript:void(0);">Скидки</a>
+                            <ul class="new_list">
+                                <li><a href="#"> этот сезон</a> </li>
+                                <li><a href="#">прошлый сезон</a> </li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+            </nav>
+        </div>
+    </section>
+
+    <section class="bascet">
+      <div class="wrapper">
+
+          <div class="content_cart">
+              <div class="content_cart_for_product">
+                  <div class="cart_product">
+                      <div class="cart_img">
+                          <img src="img/layer-39.jpg" alt="Фото" title="изображение">
+                      </div>
+                      <div class="cart_title">
+                          <span class="cart_brand">adidas</span>
+                          <span class="cart_name"> EXCLUSIVE T-SHIRT</span>
+                      </div>
+                      <div class="cart_price">
+                          $110,00
+                      </div>
+                      <div class="cart_count">
+                          <span class="cart_qty">5</span>
+                          <span class="cart_up"><button></button></span>
+                      </div>
+                      <div class="cart_total">
+                          $220,00
+                      </div>
+                      <div class="cart_delite">
+                          <a href="#"></a>
+                      </div>
+                  </div>
+                  <div class="cart_product">
+                      <div class="cart_img">
+                          <img src="img/layer-8.png" alt="Фото" title="изображение">
+                      </div>
+                      <div class="cart_title">
+                          <span class="cart_brand">adidas</span>
+                          <span class="cart_name"> EXCLUSIVE T-SHIRT</span>
+                      </div>
+                      <div class="cart_price">
+                          $110,00
+                      </div>
+                      <div class="cart_count">
+                          <span class="cart_qty">5</span>
+                          <span class="cart_up"><button></button></span>
+                      </div>
+                      <div class="cart_total">
+                          $220,00
+                      </div>
+                      <div class="cart_delite">
+                          <a href="#"></a>
+                      </div>
+                  </div>
+                  <div class="cart_product">
+                      <div class="cart_img">
+                          <img src="img/layer-17.png" alt="Фото" title="изображение">
+                      </div>
+                      <div class="cart_title">
+                          <span class="cart_brand">adidas</span>
+                          <span class="cart_name"> EXCLUSIVE T-SHIRT</span>
+                      </div>
+                      <div class="cart_price">
+                          $110,00
+                      </div>
+                      <div class="cart_count">
+                          <span class="cart_qty">5</span>
+                          <span class="cart_up"><button></button></span>
+                      </div>
+                      <div class="cart_total">
+                          $220,00
+                      </div>
+                      <div class="cart_delite">
+                          <a href="#"></a>
+                      </div>
+              </div>
+              </div>
+              <div class="cart_checout">
+                <div class="checout_top">
+                    <h3 >Общая сумма заказа</h3>
+                    <hr class="hr">
+                    <span class="cart_subtotal">Сумма заказа</span>
+                    <span class="cart_sutotal_price">1125$</span><br>
+                    <span class="cart_shipping">Доставка</span>
+                    <span class="cart_shipping_price ">Бесплатно</span>
+                    <hr class="hr">
+                    <span class="order_total">Сумма заказа</span>
+                    <span class="order_total_price">1125$</span>
+                    <button class="btn_order">Заказать</button>
+                    <span class="cart_continue">
+                      <a href="#">Продолжить покупки</a>
+                  </span>
+                </div>
+                  <div class="checout_bottom">
+
+                      <span class="checout_coppon">
+                          Используйте купон
+                      </span>
+                      <hr class="hr">
+                      <p class="checout_coppon_text">
+                          Если у Вас имеется купон введите его ниже
+                      </p>
+                      <input type="text" class="checout_input" placeholder="Введите Ваш код">
+                      <button class="checout_button">Применить</button>
+                  </div>
+
+
+              </div>
+
+          </div>
+          <div class="clear">
+
+          </div>
+      </div>
+    </section>
+
+
+    <section>
+        <footer>
+            <div class="footer_list">
+                <ul class="footer_customer">
+                    <li>Customer Service</li>
+                    <li>Contact </li>
+                    <li>FAQ </li>
+                    <li>Terms of payment </li>
+                    <li>Terms of sale Deliver </li>
+                    <li>terms and conditions  </li>
+                    <li>Returns and Refunds  </li>
+                </ul>
+                <ul class="footer_info">
+                    <li>Information</li>
+                    <li>Affiliate  </li>
+                    <li>Cookies</li>
+                    <li>How to Shop About </li>
+                    <li> About  </li>
+                    <li>Investor relations  </li>
+                </ul>
+                <ul class="footer_camp">
+                    <li>Campaigns </li>
+                    <li>Evening dresses  </li>
+                    <li> Makeup  </li>
+                    <li>Fashion forward training  </li>
+                    <li> clothes </li>
+                    <li> Special Occasion Dresses </li>
+                </ul>
+                <ul class="fooret_sity">
+                    <li>Stores</li>
+                    <li>Paris </li>
+                    <li>New York </li>
+                    <li> New York London  </li>
+                    <li>Madrid   </li>
+                    <li>Tokio   </li>
+                </ul>
+                <ul class="social_footer">
+                    <li>Social</li>
+                    <li><span class="twitt">
+                            <a href="#"><img src="img/icons/vector-smart-objectr.png"></a>
+                        </span><span class="ramb">
+                             <a href="#"><img src="img/icons/vector-smart-objecte.png"></a>
+                        </span><span class="face">
+                             <a href="#"><img src="img/icons/vector-smart-objectw.png"></a>
+                        </span></li>
+                    <li><span class="googl">
+                            <a href="#"><img src="img/icons/vector-smart-objectg.png"></a>
+                        </span><span class="t">
+                           <a href="#"><img src="img/icons/vector-smart-objecttt.png"></a>
+                        </span><span class="vk">
+                            <a href="#"><img src="img/icons/vector-smart-objectvv.png"></a>
+                        </span></li>
+                </ul>
+                <ul class="footer_icons">
+                    <li><img src="img/icons/5-layers.png"></li>
+                </ul>
+            </div>
+            <div class="footer_adapt">
+                <div class="wrapper">
+                    <button class="bottom_menu"><img src="img/icons/rounded-rectangle-2-copy-3.png"></button>
+                    <ul class="footer_adapt_list">
+                        <li><a href="#">Главная</a></li>
+                        <li><a href="#">О нас</a></li>
+                        <li><a href="#">Корзина</a></li>
+                        <li><a href="#">Контакты</a></li>
+                        <li><a href="#">Партнерам</a></li>
+                    </ul>
+                    <span class="copy">&copy;LookShop.com</span>
+                </div>
+            </div>
+        </footer>
+    </section>
+</div>
+
+
+</body>
+</html>

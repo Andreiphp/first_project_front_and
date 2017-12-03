@@ -51,7 +51,7 @@
                             </select>
                         </form>
                     </div>
-                    <div class="inl account"><span class="account_list"><a href="#">my account</a></span></div>
+                    <div class="inl account"><span class="account_list"><a href="#">мой аккаунт</a></span></div>
 
                     <div class="container-2">
                         <span class="icon"><i class="fa fa-search"></i></span>
@@ -63,13 +63,13 @@
     </div>
     <section>
         <div class="wrapper">
-            <nav>
+            <nav id="navigation">
                 <div class="logo">
                     <img src="/img/logo.png">
                 </div>
 
                 <div class="basket">
-                    <div class="basket_title">Your cart</div>
+                    <div class="basket_title">корзина</div>
                     <div class="bascet_count">0 items  -  $0</div>
                     <span class="products_cart">
                             Нет товаров
@@ -116,37 +116,43 @@
             </nav>
         </div>
     </section>
-    <section>
+    <section class="section_slide_3">
         <div class="wrapper">
-            <div class="slider_wrap">
-                <div class="slider">
-                    <div class="slider_cont">
-                        <div class="cont__inner"></div>
-                        <div class="slider_content">
-                            <img  class="slide showing" src="img/2-layersss.png">
-                            <div class="seder_title">
-                                <p class="seder_title_top">Open Heart Top</p>
-                                <span class="slider_price">$13.95</span>
-                                <p class="slider_text">This is Photoshop's version  of Lorem Ipsum.
-                                    Proin gravida nibh vel velit auctor aliquet. Aenean sollicitudin,
-                                    lorem quis bibendum auctor, nisi elit consequat ipsum, nec sagittis sem nibh id elit.
-                                    Duis sed odio sit amet nibh vulputate cursus a sit amet mauris.
-                                    Morbi accumsan ipsum velit.
-                                    Nam nec tellus a odio tincidunt auctor a ornare odio. </p>
-                                <span class="product_add_to_cart_r"><a href="">купить</a></span>
-                            </div>
-                        </div>
-                        <div class="buttom_left_sl"><a href="javascript:void(0);" id="previos"><img src="img/icons/rectangle-5-copy.png"></a></div>
-                        <div class="buttom_right"><a href="javascript:void(0);" id="next"><img src="img/icons/rectangle-5-copy-2.png"></a></div>
+            <div class="slider_3">
+                <div class="products_for_slide">
+                   <div class="products_img_slide"> <img src="img/layer-48.jpg"></div>
+                    <div class="products_content_for_slide">
+                        <p class="products_title">Open Heart Surce</p>
+                        <span class="products_price">$13.9</span>
+                        <p class="products_text">
+                            Lorem ipsum dolor sit amet. Eligendi optio, cumque nihil impedit, quo minus id, quod maxime placeat.
+                            Laudantium, totam rem aperiam eaque ipsa, quae ab illo inventore veritatis.
+                            Eos, qui ratione voluptatem sequi nesciunt, neque porro quisquam est, omnis voluptas.
+                            Debitis aut perferendis doloribus asperiores repellat..
+                            Saepe eveniet, ut et dolore magnam aliquam quaerat voluptatem accusantium.
+                            Non recusandae placeat, facere possimus, omnis dolor repellendus animi, id.
+                        </p>
+                        <span class="product_add_to_cart_r"><a href="">купить</a></span>
                     </div>
                 </div>
-                <div class="nav_round">
-                    <ul>
-                        <li class="list_slide red"><a href="#"></a></li>
-                        <li class="list_slide"><a href="#"></a></li>
-                        <li class="list_slide"><a href="#"></a></li>
-                    </ul>
+                <div class="products_for_slide">
+                    <div class="products_img_slide"> <img src="img/layer-40.jpg"></div>
+                    <div class="products_content_for_slide">
+                        <p class="products_title">Open Heart Surce</p>
+                        <span class="products_price">$13.9</span>
+                        <p class="products_text">
+                            Lorem ipsum dolor sit amet. Eligendi optio, cumque nihil impedit, quo minus id, quod maxime placeat.
+                            Laudantium, totam rem aperiam eaque ipsa, quae ab illo inventore veritatis.
+                            Eos, qui ratione voluptatem sequi nesciunt, neque porro quisquam est, omnis voluptas.
+                            Debitis aut perferendis doloribus asperiores repellat..
+                            Saepe eveniet, ut et dolore magnam aliquam quaerat voluptatem accusantium.
+                            Non recusandae placeat, facere possimus, omnis dolor repellendus animi, id.
+                        </p>
+                        <span class="product_add_to_cart_r"><a href="">купить</a></span>
+                    </div>
+
                 </div>
+
             </div>
         </div>
     </section>
@@ -219,7 +225,7 @@
                 </div>
                 <div class="products_menu">
                     <div class="products_menu_title">
-                       <h2> categories</h2>
+                       <h2> Категории</h2>
                         <div id="menu_body">
                             <ul>
                                 <li class="menu_icons_o"><a name="ancor" href="#" onclick="openMenu('sub_menu_1');return(false)">Новинки</a>
@@ -257,11 +263,10 @@
                             </ul>
                         </div>
                     </div>
-
                     <div class="polzunok">
                         <p>
                             <label for="amount">Диапазон цен:</label>
-                            <input type="text" id="amount" readonly style="width: 70px; border:0; color:#f6931f; font-weight:bold;">
+                            <input type="text" id="amount" readonly style="width: 60px; border:0; color:#f6931f; font-weight:bold;">
                         </p>
                         <div id="slider-range"></div>
                         <button class="filtr_buut">Фильтр</button>

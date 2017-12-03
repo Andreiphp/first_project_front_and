@@ -15,6 +15,18 @@
     <script src="js/custom.js"></script>
 </head>
 <body>
+<div id="modal_window" class="modal_dialog">
+    <div>
+        <a href="#close" title="Закрыть" class="close">X</a>
+     <span>Если не зарегистрированны </span>   <button class="modal_button" value="registr">Зарегистрироваться</button>
+        <form class="auth"  method="post">
+                <input type="text" name="login" placeholder="введите ваш логин">
+                <input type="password" name="password" placeholder="введите ваш пароль">
+                <input type="submit" value="Войти">
+        </form>
+
+    </div>
+</div>
     <div class="main">
         <div class="header">
         <div class="wrapper">
@@ -31,7 +43,7 @@
                             </select>
                             </form>
                     </div>
-                    <div class="inl account"><span class="account_list"><a href="#">личный кабинет</a></span></div>
+                    <div class="inl account"><span class="account_list"><a href="#modal_window">личный кабинет</a></span></div>
 
                         <div class="container-2">
                             <span class="icon"><i class="fa fa-search"></i></span>
@@ -50,7 +62,7 @@
 
                     <div class="basket">
                         <div class="basket_title">Ваша корзина</div>
-                        <div class="bascet_count">0 количечтво  -  $0</div>
+                        <div class="bascet_count"><a href="">0 количество  -  $0</a></div>
                         <span class="products_cart">
                             Нет товаров
                         </span>
@@ -99,28 +111,13 @@
         </section>
         <section>
             <div class="slider_wrap">
-                <div class="slider">
-                    <div class="slider_cont">
-                        <div class="cont__inner"></div>
-                        <img  class="slide showing" src="img/slider2-copy.png">
-                        <img  class="slide" src="img/banner-three.jpg">
-                        <img  class="slide" src="img/banner.jpg">
-
-                        <div class="buttom_left_sl"><a href="javascript:void(0);" id="previos"><img src="img/icons/rectangle-5-copy.png"></a></div>
-                        <div class="buttom_right"><a href="javascript:void(0);" id="next"><img src="img/icons/rectangle-5-copy-2.png"></a></div>
-
+                    <div class="single-item">
+                        <div  class="slider_container"><img  class="" src="img/slider2-copy.png"></div>
+                       <div class="slider_container"> <img  class="" src="img/banner-three.jpg"></div>
+                        <!--<div class="slider_container"><img  class="" src="img/banner.jpg"></div>-->
                     </div>
-
                 </div>
 
-                <div class="nav_round">
-                    <ul>
-                        <li class="list_slide red"><a href="#"></a></li>
-                        <li class="list_slide"><a href="#"></a></li>
-                        <li class="list_slide"><a href="#"></a></li>
-                    </ul>
-                </div>
-            </div>
         </section>
         <section>
             <div class="find_us">
@@ -131,7 +128,7 @@
                     </div>
                     <div class="social">
                         <ul>
-                            <li class="word">Найди нас здесь</li><li class="facebook"><a href="#"></a> </li><li class="twitter"><a href="#"></a></li><li class="last-soc"><a href="#"></a></li>
+                          <li class="facebook"><a href="#"></a> </li><li class="twitter"><a href="#"></a></li><li class="last-soc"><a href="#"></a></li>
                         </ul>
                     </div>
                 </div>
@@ -252,15 +249,17 @@
         <section>
             <div class="wrapper">
                 <div class="centred">
-                    <div class="product_r">
+                    <div class="product_r ">
                         <div class="sale"><span>скидка</span></div>
-                            <img src="img/layer-18.png" alt="Фото товара" title="Изображение">
+                          <div class="wrapper_img">
+                              <img src="img/layer-39.jpg" alt="Фото товара" title="Изображение">
+                          </div>
                             <span class="title_r">MIMOSA LACE DRESS</span>
                             <div class="price"><span class="price_val_r">$</span><span class="product_price_r">76.95</span></div>
                             <span class="product_add_to_cart_r"><a href="">купить</a></span>
                             <span class="into_bascet"><a href="" class="disabled">в корзине</a></span>
                     </div>
-                    <div class="product_r">
+                    <div class="product_r ">
                         <span class="new_product">новинка</span>
                         <img src="img/layer-18.png" alt="Фото товара" title="Изображение">
                         <span class="title_r">MIMOSA LACE DRESS</span>
@@ -268,14 +267,14 @@
                         <span class="product_add_to_cart_r"><a href="">купить</a></span>
                         <span class="into_bascet"><a href="" class="disabled">в корзине</a></span>
                     </div>
-                    <div class="product_r">
+                    <div class="product_r ">
                         <img src="img/layer-18.png" alt="Фото товара" title="Изображение">
                         <span class="title_r">MIMOSA LACE DRESS</span>
                         <div class="price"><span class="price_val_r">$</span><span class="product_price_r">76.95</span></div>
                         <span class="product_add_to_cart_r"><a href="">купить</a></span>
                         <span class="into_bascet"><a href="" class="disabled">в корзине</a></span>
                     </div>
-                    <div class="product_r">
+                    <div class="product_r ">
                         <img src="img/layer-18.png" alt="Фото товара" title="Изображение">
                         <span class="title_r">MIMOSA LACE DRESS</span>
                         <div class="price"><span class="price_val_r">$</span><span class="product_price_r">76.95</span></div>
@@ -285,7 +284,7 @@
                 </div>
             </div>
         </section>
-        <section>
+        <section class="brands_list">
             <div class="footer_slide">
                 <div class="left_hr"></div>
                 <div class="centr_hr"><span>Наши бренды</span></div>
@@ -311,13 +310,9 @@
                 <div class="obout">
                     <h1>О LookShop</h1>
                     <p>
-                        This is Photoshop's version  of Lorem Ipsum. Proin gravida nibh vel velit auctor aliquet.
-                        Aenean sollicitudin, lorem quis bibendum auctor, nisi elit consequat ipsum, nec sagittis sem nibh id elit.
-                        Duis sed odio sit amet nibh vulputate cursus a sit amet mauris. Morbi accumsan ipsum velit.
-                        Nam nec tellus a odio tincidunt auctor a ornare odio. Sed non  mauris vitae erat consequat auctor eu in elit.
-                        Class aptent taciti sociosqu ad litora torquent
-                        per conubia nostra, per inceptos himenaeos. Mauris in erat justo.
-                        Nullam ac urna eu felis dapibus condimentum sit amet a augue.
+                       Наша компания , на протяжении 10 лет помогает Вам быть счастоивыми , идти в ногу со временем.
+                        Преодолевая трудности на своем пути , мы укрепляли свое вляние на рынке! Пройдя становление от не большого интернет магазина
+                        до крупной ИНТЕРНАЦИОНАЛЬНОЙ КОМПАНИИ , мы узнали и полюбили своего клиента как ни кто другой!
                     </p>
                 </div>
             </div>

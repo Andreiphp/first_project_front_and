@@ -13,27 +13,6 @@
     <link rel="stylesheet" type="text/css" href="libs/slick/slick-theme.css"/>
     <link rel="stylesheet" href="https://code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
 </head>
-<script type="text/javascript">
-    var id_menu = new Array('sub_menu_1','sub_menu_2','sub_menu_3');
-    startList = function allclose() {
-        for (i=0; i < id_menu.length; i++){
-            document.getElementById(id_menu[i]).style.display = "none";
-        }
-    };
-    function openMenu(id){
-        for (i=0; i < id_menu.length; i++){
-            if (id != id_menu[i]){
-                document.getElementById(id_menu[i]).style.display = "none";
-            }
-        }
-        if (document.getElementById(id).style.display == "block"){
-            document.getElementById(id).style.display = "none";
-        }else{
-            document.getElementById(id).style.display = "block";
-        }
-    }
-    window.onload = startList;
-</script>
 <body>
 <div class="main">
     <div class="header">
@@ -78,35 +57,35 @@
                 <div class="menu_list">
                     <span>menu</span><button class="top_menu"><img src="img/icons/rounded-rectangle-2-copy-2.png"></button>
                     <ul class="menu">
-                        <li class="menu_list_hover1"><a href="javascript:void(0);">new</a>
+                        <li class="menu_list_hover1"><a href="javascript:void(0);">New</a>
                             <ul class="new_list">
                                 <li ><a href="#">new style(2017)</a></li>
                                 <li><a href="#">next spring(2017)</a></li>
                                 <li><a href="#">next winter(2017)</a></li>
                             </ul>
                         </li>
-                        <li><a href="javascript:void(0);">designers</a>
+                        <li><a href="javascript:void(0);">Designers</a>
                             <ul class="new_list">
                                 <li ><a href="#">fashion designer</a></li>
                                 <li><a href="#">draftsman</a></li>
                                 <li><a href="#">developer</a></li>
                             </ul>
                         </li>
-                        <li><a href="javascript:void(0);">women</a>
+                        <li><a href="javascript:void(0);">Women</a>
                             <ul class="new_list">
                                 <li ><a href="#">women style(2017)</a></li>
                                 <li><a href="#">women spring(2017)</a></li>
                                 <li><a href="#">women winter(2017)</a></li>
                             </ul>
                         </li>
-                        <li><a href="javascript:void(0);">men</a>
+                        <li><a href="javascript:void(0);">Men</a>
                             <ul class="new_list">
                                 <li ><a href="#">men style(2017)</a></li>
                                 <li><a href="#">men spring(2017)</a></li>
                                 <li><a href="#">men winter(2017)</a></li>
                             </ul>
                         </li>
-                        <li><a href="javascript:void(0);">clearence</a>
+                        <li><a href="javascript:void(0);">Clearence</a>
                             <ul class="new_list">
                                 <li><a href="#">show more Sale</a> </li>
                             </ul>
@@ -166,9 +145,6 @@
                     <p>Почтовые адреса</p>
                     <p>Адрес для корреспонденции:
                         220136, Республика Беларусь, г. Минск, ул. Серна, д. 6, пом. 154, комн. 367</p><br>
-                        <p>Почтовые адреса</p>
-                        <p>Юридический адрес:
-                            220136, Республика Беларусь, г. Минск, ул. Серна, д. 644, пом. 14, комн. 78</p>
                         </div>
                 </div>
             </div>
@@ -276,7 +252,7 @@
                 <ul class="footer_adapt_list">
                     <li><a href="#">Главная</a></li>
                     <li><a href="#">О нас</a></li>
-                    <li><a href="#">Способы оплаты</a></li>
+                    <li><a href="#">Корзина</a></li>
                     <li><a href="#">Контакты</a></li>
                     <li><a href="#">Партнерам</a></li>
                 </ul>
@@ -286,14 +262,6 @@
     </footer>
 </section>
 </div>
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-<script type="text/javascript" src="libs/slick/slick.min.js"></script>
-<script src="js/wow.min.js"></script>
-<script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
-<script src="js/jqyery.js"></script>
-<script src="js/custom.js"></script>
-<script>
-    new WOW().init();
-</script>
+
 </body>
 </html>

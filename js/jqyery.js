@@ -34,7 +34,7 @@ $('.slider_body').slick({
                 arrows: true,
                 centerMode: true,
                 centerPadding: '2px',
-                slidesToShow: 3
+                slidesToShow: 4
             }
         },
         {
@@ -49,13 +49,32 @@ $('.slider_body').slick({
     ]
 });
 
+$('.single-item').slick({
+    dots: true,
+    infinite: true,
+    speed: 300,
+    slidesToShow: 1,
+    centerMode: true,
+    centerPadding:100
+
+});
+$('.slider_3').slick({
+    dots: true,
+    infinite: true,
+    speed: 300,
+    slidesToShow: 1,
+    centerMode: true,
+    centerPadding:100
+
+});
+
 // ползунок диапазона цен
 $( function() {
     $( "#slider-range" ).slider({
         range: true,
-        min: 0,
+        min: 5,
         max: 500,
-        values: [ 0, 500 ],
+        values: [ 5, 500 ],
         slide: function( event, ui ) {
             $( "#amount" ).val( "$" + ui.values[ 0 ] + " - $" + ui.values[ 1 ] );
         }
@@ -69,3 +88,13 @@ $(".accordion .product_discription_hide").hide().prev().click(function (){
     $(this).next().not(":visible").slideDown();
 });
 
+jQuery(function($) {
+    $(window).scroll(function(){
+        if($(this).scrollTop()>140){
+            $('#navigation').addClass('fixed');
+        }
+        else if ($(this).scrollTop()<140){
+            $('#navigation').removeClass('fixed');
+        }
+    });
+});
