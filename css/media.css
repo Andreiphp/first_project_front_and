@@ -164,9 +164,6 @@
     }
 
 
-    .centred .product_r:first-child{
-
-    }
     .product_r{
         width: calc(100% /2 - 25px);
         margin-bottom: 20px;
@@ -455,6 +452,7 @@
         margin-bottom: 20px;
 
     }
+
 
     .products_menu {
             display: none;
