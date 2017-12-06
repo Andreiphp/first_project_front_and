@@ -17,12 +17,12 @@
 <body>
 <div id="modal_window" class="modal_dialog">
     <div>
-        <a href="#close" title="Закрыть" class="close">X</a>
+        <a href="#close" id="close" title="Закрыть" class="close">X</a>
      <span>Если не зарегистрированны </span>   <button class="modal_button" value="registr">Зарегистрироваться</button>
         <form class="auth"  method="post">
                 <input type="text" name="login" placeholder="введите ваш логин">
                 <input type="password" name="password" placeholder="введите ваш пароль">
-                <input type="submit" value="Войти">
+                <input type="button" value="Войти">
         </form>
 
     </div>
@@ -43,7 +43,7 @@
                             </select>
                             </form>
                     </div>
-                    <div class="inl account"><span class="account_list"><a href="#modal_window">личный кабинет</a></span></div>
+                    <div class="inl account"><span class="account_list"><a href="#modal_window" id="open">личный кабинет</a></span></div>
 
                         <div class="container-2">
                             <span class="icon"><i class="fa fa-search"></i></span>
@@ -57,7 +57,7 @@
             <div class="wrapper">
                 <nav>
                     <div class="logo">
-                        <img src="img/logo.png" alt="logo" title="на главную">
+                      <a href="/">  <img src="img/logo.png" alt="logo" title="на главную"></a>
                     </div>
 
                     <div class="basket">
@@ -159,11 +159,11 @@
                 </div>
             </div>
         </section>
-        <section class="slider_but">
+        <section class="slider_but" id="slider_target">
             <div class="wrapper">
-                <div class="slider_bott">
+                <div class="slider_bott" >
                     <ul id="slider_bott_ul">
-                        <li id="slider_items1">Акция</li><li id="slider_items2">Эксклюзив</li><li id="slider_items3">Новинки</li><li id="slider_items4">Топ</li>
+                        <li class="slider_items whiteborder">Акция</li><li class="slider_items">Эксклюзив</li><li class="slider_items">Новинки</li><li class="slider_items">Топ</li>
                     </ul>
                     <div id="slider_bott_ul_mobile">
                         <form>
@@ -175,64 +175,90 @@
                         </select>
                             </form>
                     </div>
-                    <div class="slider_butto_bot">
-                        <span><a href = "javascript:void(0);"></a></span><span><a href = "javascript:void(0);"></a></span>
-                    </div>
+
                 </div>
             </div>
             <div class="slider_but_rasp" >
                         <div class="wrapper">
-                            <div class="slider_body" id="slider_items1t">
-                                <div class="product_r">
-                                    <div class="sale"><span>скидка</span></div>
-                                    <img src="img/layer-18.png" alt="Фото товара" title="Изображение">
-                                    <span class="title_r">MIMOSA LACE DRESS</span>
-                                    <div class="price"><span class="price_val_r">$</span><span class="product_price_r">76.95</span></div>
-                                    <span class="product_add_to_cart_r"><a href="">купить</a></span>
-                                    <span class="into_bascet"><a href="" class="disabled">в корзине</a></span>
-                                </div>
-                                <div class="product_r">
-                                    <img src="img/layer-18.png" alt="Фото товара" title="Изображение">
-                                    <span class="title_r">MIMOSA LACE DRESS</span>
-                                    <div class="price"><span class="price_val_r">$</span><span class="product_price_r">76.95</span></div>
-                                    <span class="product_add_to_cart_r"><a href="">купить</a></span>
-                                    <span class="into_bascet"><a href="" class="disabled">в корзине</a></span>                                </div>
-                                <div class="product_r">
-                                    <img src="img/layer-18.png" alt="Фото товара" title="Изображение">
-                                    <span class="title_r">MIMOSA LACE DRESS</span>
-                                    <div class="price"><span class="price_val_r">$</span><span class="product_price_r">76.95</span></div>
-                                    <span class="product_add_to_cart_r"><a href="">купить</a></span>
-                                    <span class="into_bascet"><a href="" class="disabled">в корзине</a></span>                                </div>
-                                <div class="product_r">
-                                    <img src="img/layer-18.png" alt="Фото товара" title="Изображение">
-                                    <span class="title_r">MIMOSA LACE DRESS</span>
-                                    <div class="price"><span class="price_val_r">$</span><span class="product_price_r">76.95</span></div>
-                                    <span class="product_add_to_cart_r"><a href="">купить</a></span>
-                                    <span class="into_bascet"><a href="" class="disabled">в корзине</a></span>                                </div>
-                                <div class="product_r">
-                                    <img src="img/layer-18.png" alt="Фото товара" title="Изображение">
-                                    <span class="title_r">MIMOSA LACE DRESS</span>
-                                    <div class="price"><span class="price_val_r">$</span><span class="product_price_r">76.95</span></div>
-                                    <span class="product_add_to_cart_r"><a href="">купить</a></span>
-                                    <span class="into_bascet"><a href="" class="disabled">в корзине</a></span>
-                                </div>
-                                <div class="product_r">
-                                    <img src="img/layer-18.png" alt="Фото товара" title="Изображение">
-                                    <span class="title_r">MIMOSA LACE DRESS</span>
-                                    <div class="price"><span class="price_val_r">$</span><span class="product_price_r">76.95</span></div>
-                                    <span class="product_add_to_cart_r"><a href="">купить</a></span>
-                                    <span class="into_bascet"><a href="" class="disabled">в корзине</a></span>
-                                </div>
-                                <div class="product_r">
-                                    <img src="img/layer-18.png" alt="Фото товара" title="Изображение">
-                                    <span class="title_r">MIMOSA LACE DRESS</span>
-                                    <div class="price"><span class="price_val_r">$</span><span class="product_price_r">76.95</span></div>
-                                    <span class="product_add_to_cart_r"><a href="">купить</a></span>
-                                    <span class="into_bascet"><a href="" class="disabled">в корзине</a></span>
+                            <div class="slider_wrap_tab">
+                                <div class="slider_body">
+                                    <div class="product_r">
+                                        <img src="img/layer-19.png" alt="Фото товара" title="Изображение">
+                                        <span class="title_r">MIMOSA LACE DRESS</span>
+                                        <div class="price"><span class="price_val_r">$</span><span class="product_price_r">76.95</span></div>
+                                        <span class="product_add_to_cart_r"><a href="">купить</a></span>
+                                        <span class="into_bascet"><a href="" class="disabled">в корзине</a></span>                                </div>
+                                    <div class="product_r">
+                                        <span class="new_product">новинка</span>
+                                        <img src="img/layer-18.png" alt="Фото товара" title="Изображение">
+                                        <span class="title_r">MIMOSA LACE DRESS</span>
+                                        <div class="price"><span class="price_val_r">$</span><span class="product_price_r">76.95</span></div>
+                                        <span class="product_add_to_cart_r"><a href="">купить</a></span>
+                                        <span class="into_bascet"><a href="" class="disabled">в корзине</a></span>                                </div>
+                                    <div class="product_r">
+                                        <div class="sale"><span>скидка</span></div>
+                                        <img src="img/layer-9.png" alt="Фото товара" title="Изображение">
+                                        <span class="title_r">MIMOSA LACE DRESS</span>
+                                        <div class="price"><span class="price_val_r">$</span><span class="product_price_r">76.95</span></div>
+                                        <span class="product_add_to_cart_r"><a href="">купить</a></span>
+                                        <span class="into_bascet"><a href="" class="disabled">в корзине</a></span>
+                                    </div>
+                                    <div class="product_r">
+                                        <img src="img/layer-41.jpg" alt="Фото товара" title="Изображение">
+                                        <span class="title_r">MIMOSA LACE DRESS</span>
+                                        <div class="price"><span class="price_val_r">$</span><span class="product_price_r">76.95</span></div>
+                                        <span class="product_add_to_cart_r"><a href="">купить</a></span>
+                                        <span class="into_bascet"><a href="" class="disabled">в корзине</a></span>
+                                    </div>
+                                    <div class="product_r">
+                                        <img src="img/layer-42.jpg" alt="Фото товара" title="Изображение">
+                                        <span class="title_r">MIMOSA LACE DRESS</span>
+                                        <div class="price"><span class="price_val_r">$</span><span class="product_price_r">76.95</span></div>
+                                        <span class="product_add_to_cart_r"><a href="">купить</a></span>
+                                        <span class="into_bascet"><a href="" class="disabled">в корзине</a></span>
+                                    </div>
                                 </div>
                             </div>
-                            <div class="slider_body" id="slider_items2t">
+                            <div class="slider_wrap_tab">
+                                <div class="slider_body">
+
+                                    <div class="product_r">
+                                        <div class="sale"><span>скидка</span></div>
+                                        <img src="img/layer-18.png" alt="Фото товара" title="Изображение">
+                                        <span class="title_r">MIMOSA LACE DRESS</span>
+                                        <div class="price"><span class="price_val_r">$</span><span class="product_price_r">76.95</span></div>
+                                        <span class="product_add_to_cart_r"><a href="">купить</a></span>
+                                        <span class="into_bascet"><a href="" class="disabled">в корзине</a></span>                                </div>
+                                    <div class="product_r">
+                                        <img src="img/layer-39.jpg" alt="Фото товара" title="Изображение">
+                                        <span class="title_r">MIMOSA LACE DRESS</span>
+                                        <div class="price"><span class="price_val_r">$</span><span class="product_price_r">76.95</span></div>
+                                        <span class="product_add_to_cart_r"><a href="">купить</a></span>
+                                        <span class="into_bascet"><a href="" class="disabled">в корзине</a></span>                                </div>
+                                    <div class="product_r">
+                                        <img src="img/layer-19.png" alt="Фото товара" title="Изображение">
+                                        <span class="title_r">MIMOSA LACE DRESS</span>
+                                        <div class="price"><span class="price_val_r">$</span><span class="product_price_r">76.95</span></div>
+                                        <span class="product_add_to_cart_r"><a href="">купить</a></span>
+                                        <span class="into_bascet"><a href="" class="disabled">в корзине</a></span>
+                                    </div>
+                                    <div class="product_r">
+                                        <img src="img/layer-46.jpg" alt="Фото товара" title="Изображение">
+                                        <span class="title_r">MIMOSA LACE DRESS</span>
+                                        <div class="price"><span class="price_val_r">$</span><span class="product_price_r">76.95</span></div>
+                                        <span class="product_add_to_cart_r"><a href="">купить</a></span>
+                                        <span class="into_bascet"><a href="" class="disabled">в корзине</a></span>
+                                    </div>
+                                    <div class="product_r">
+                                        <img src="img/layer-50.jpg" alt="Фото товара" title="Изображение">
+                                        <span class="title_r">MIMOSA LACE DRESS</span>
+                                        <div class="price"><span class="price_val_r">$</span><span class="product_price_r">76.95</span></div>
+                                        <span class="product_add_to_cart_r"><a href="">купить</a></span>
+                                        <span class="into_bascet"><a href="" class="disabled">в корзине</a></span>
+                                    </div>
+                                </div>
                             </div>
+
                          </div>
             </div>
         </section>
@@ -251,15 +277,13 @@
                 <div class="centred">
                     <div class="product_r ">
                         <div class="sale"><span>скидка</span></div>
-                          <div class="wrapper_img">
                               <img src="img/layer-39.jpg" alt="Фото товара" title="Изображение">
-                          </div>
                             <span class="title_r">MIMOSA LACE DRESS</span>
                             <div class="price"><span class="price_val_r">$</span><span class="product_price_r">76.95</span></div>
                             <span class="product_add_to_cart_r"><a href="">купить</a></span>
                             <span class="into_bascet"><a href="" class="disabled">в корзине</a></span>
                     </div>
-                    <div class="product_r ">
+                    <div class="product_r">
                         <span class="new_product">новинка</span>
                         <img src="img/layer-18.png" alt="Фото товара" title="Изображение">
                         <span class="title_r">MIMOSA LACE DRESS</span>
@@ -379,11 +403,12 @@
                     <button class="bottom_menu"><img src="img/icons/rounded-rectangle-2-copy-3.png"></button>
                     <div class="wrapper">
                         <ul class="footer_adapt_list">
-                            <li><a href="#">Главная</a></li>
-                            <li><a href="#">О нас</a></li>
-                            <li><a href="#">Способы оплаты</a></li>
-                            <li><a href="#">Контакты</a></li>
-                            <li><a href="#">Партнерам</a></li>
+                            <li><a href="/">Главная</a></li>
+                            <li><a href="about.html">О нас</a></li>
+                            <li><a href="products.html">Категории</a></li>
+                            <li><a href="contact.html">Контакты</a></li>
+                            <li><a href="partneram.html">Партнерам</a></li>
+                            <li><a href="basket.html">Корзина</a></li>
                         </ul>
                         <span class="copy">&copy;LookShop.com</span>
                     </div>

@@ -3,7 +3,7 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width initial-scale=1.0">
-    <title>Slider</title>
+    <title>Интернет Магазин</title>
     <link rel="stylesheet" type="text/css" href="css/normalize.css" >
     <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css" rel="stylesheet">
     <link rel="stylesheet" type="text/css" href="css/style.css" >
@@ -11,14 +11,27 @@
     <link rel="stylesheet" type="text/css" href="css/media.css" >
     <link rel="stylesheet" type="text/css" href="libs/slick/slick.css"/>
     <link rel="stylesheet" type="text/css" href="libs/slick/slick-theme.css"/>
-    <link rel="stylesheet" href="https://code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+    <link href="http://allfont.ru/allfont.css?fonts=a_empirial" rel="stylesheet" type="text/css" />
+    <script src="js/custom.js"></script>
 </head>
 <body>
+<div id="modal_window" class="modal_dialog">
+    <div>
+        <a href="#close" id="close" title="Закрыть" class="close">X</a>
+        <span>Если не зарегистрированны </span>   <button class="modal_button" value="registr">Зарегистрироваться</button>
+        <form class="auth"  method="post">
+            <input type="text" name="login" placeholder="введите ваш логин">
+            <input type="password" name="password" placeholder="введите ваш пароль">
+            <input type="button" value="Войти">
+        </form>
+
+    </div>
+</div>
 <div class="main">
     <div class="header">
         <div class="wrapper">
             <div class="header_content">
-                <div class="care inl"><span>custom care:</span><span class="care_tel">888-23-4567</span></div>
+                <div class="care inl"><span>телефон:</span><span class="care_tel">888-23-4567</span></div>
                 <div class="right">
                     <div class=" inl select">
                         <form method="get">
@@ -30,7 +43,7 @@
                             </select>
                         </form>
                     </div>
-                    <div class="inl account"><span class="account_list"><a href="#">my account</a></span></div>
+                    <div class="inl account"><span class="account_list"><a href="#modal_window" id="open">личный кабинет</a></span></div>
 
                     <div class="container-2">
                         <span class="icon"><i class="fa fa-search"></i></span>
@@ -44,50 +57,51 @@
         <div class="wrapper">
             <nav>
                 <div class="logo">
-                    <img src="/img/logo.png">
+                    <a href="/">  <img src="img/logo.png" alt="logo" title="на главную"></a>
                 </div>
 
                 <div class="basket">
-                    <div class="basket_title">Your cart</div>
-                    <div class="bascet_count">0 items  -  $0</div>
+                    <div class="basket_title">Ваша корзина</div>
+                    <div class="bascet_count"><a href="">0 количество  -  $0</a></div>
                     <span class="products_cart">
                             Нет товаров
                         </span>
                 </div>
                 <div class="menu_list">
-                    <span>menu</span><button class="top_menu"><img src="img/icons/rounded-rectangle-2-copy-2.png"></button>
+                    <span>menu</span><button class="top_menu"><img src="img/icons/rounded-rectangle-2-copy-2.png" alt="кнопка" title="открыть иеню"></button>
                     <ul class="menu">
-                        <li class="menu_list_hover1"><a href="javascript:void(0);">New</a>
+                        <li class="menu_list_hover1"><a href="javascript:void(0);">новинки сезона</a>
                             <ul class="new_list">
-                                <li ><a href="#">new style(2017)</a></li>
-                                <li><a href="#">next spring(2017)</a></li>
-                                <li><a href="#">next winter(2017)</a></li>
+                                <li ><a href="#">новая коллекция(2017)</a></li>
+                                <li><a href="#">осень(2017)</a></li>
+                                <li><a href="#">зима(2017)</a></li>
                             </ul>
                         </li>
-                        <li><a href="javascript:void(0);">Designers</a>
+                        <li><a href="javascript:void(0);">дизайнерское</a>
                             <ul class="new_list">
-                                <li ><a href="#">fashion designer</a></li>
+                                <li ><a href="#"></a></li>
                                 <li><a href="#">draftsman</a></li>
                                 <li><a href="#">developer</a></li>
                             </ul>
                         </li>
-                        <li><a href="javascript:void(0);">Women</a>
+                        <li><a href="javascript:void(0);">женское</a>
                             <ul class="new_list">
-                                <li ><a href="#">women style(2017)</a></li>
-                                <li><a href="#">women spring(2017)</a></li>
-                                <li><a href="#">women winter(2017)</a></li>
+                                <li ><a href="#">нижнее белье(2017)</a></li>
+                                <li><a href="#">верхняя одежда(2017)</a></li>
+                                <li><a href="#">обувь(2017)</a></li>
                             </ul>
                         </li>
-                        <li><a href="javascript:void(0);">Men</a>
+                        <li><a href="javascript:void(0);">мужское</a>
                             <ul class="new_list">
-                                <li ><a href="#">men style(2017)</a></li>
-                                <li><a href="#">men spring(2017)</a></li>
-                                <li><a href="#">men winter(2017)</a></li>
+                                <li ><a href="#">нижнее белье(2017)</a></li>
+                                <li><a href="#">верхняя одежда(2017)</a></li>
+                                <li><a href="#">обувь(2017)</a></li>
                             </ul>
                         </li>
-                        <li><a href="javascript:void(0);">Clearence</a>
+                        <li><a href="javascript:void(0);">Скидки</a>
                             <ul class="new_list">
-                                <li><a href="#">show more Sale</a> </li>
+                                <li><a href="#"> этот сезон</a> </li>
+                                <li><a href="#">прошлый сезон</a> </li>
                             </ul>
                         </li>
                     </ul>
@@ -189,79 +203,81 @@
         </div>
     </section>
 
-<section>
-    <footer>
-        <div class="footer_list">
-            <ul class="footer_customer">
-                <li>Customer Service</li>
-                <li>Contact </li>
-                <li>FAQ </li>
-                <li>Terms of payment </li>
-                <li>Terms of sale Deliver </li>
-                <li>terms and conditions  </li>
-                <li>Returns and Refunds  </li>
-            </ul>
-            <ul class="footer_info">
-                <li>Information</li>
-                <li>Affiliate  </li>
-                <li>Cookies</li>
-                <li>How to Shop About </li>
-                <li> About  </li>
-                <li>Investor relations  </li>
-            </ul>
-            <ul class="footer_camp">
-                <li>Campaigns </li>
-                <li>Evening dresses  </li>
-                <li> Makeup  </li>
-                <li>Fashion forward training  </li>
-                <li> clothes </li>
-                <li> Special Occasion Dresses </li>
-            </ul>
-            <ul class="fooret_sity">
-                <li>Stores</li>
-                <li>Paris </li>
-                <li>New York </li>
-                <li> New York London  </li>
-                <li>Madrid   </li>
-                <li>Tokio   </li>
-            </ul>
-            <ul class="social_footer">
-                <li>Social</li>
-                <li><span class="twitt">
+    <section>
+        <footer>
+            <div class="footer_list">
+                <ul class="footer_customer">
+                    <li><a href="#">Сервис и поддержка</a></li>
+                    <li><a href="#">Как сделать заказ</a> </li>
+                    <li><a href="#">Возврат товара</a></li>
+                    <li><a href="#">Доставка </a></li>
+                </ul>
+                <ul class="footer_info">
+                    <li><a href="#"></a></li>
+                    <li><a href="#">Способы оплаты</a>  </li>
+                    <li><a href="#">Правила продажи</a></li>
+                    <li><a href="#">Возврат денежных средств</a></li>
+                    <li><a href="#"> Вопросы и ответы </a></li>
+                    <li><a href="#"></a></li>
+                </ul>
+                <ul class="footer_camp">
+                    <li><a href="#">О компании</a> </li>
+                    <li><a href="#">Контакты</a></li>
+                    <li><a href="#">Наши скидки</a></li>
+                    <li><a href="#">Отзывы</a></li>
+                    <li><a href="#"> </a></li>
+                    <li> <a href="#"></a></li>
+                </ul>
+                <ul class="fooret_sity">
+                    <li><a href="#"></a></li>
+                    <li><a href="#">Сертификаты</a></li>
+                    <li><a href="#">Преимущества</a></li>
+                    <li><a href="#">Партнерам</a></li>
+                    <li><a href="#"></a></li>
+                    <li><a href="#"></a></li>
+                </ul>
+                <ul class="social_footer">
+                    <li>Соц. сети</li>
+                    <li><span class="twitt">
                             <a href="#"><img src="img/icons/vector-smart-objectr.png"></a>
                         </span><span class="ramb">
                              <a href="#"><img src="img/icons/vector-smart-objecte.png"></a>
                         </span><span class="face">
                              <a href="#"><img src="img/icons/vector-smart-objectw.png"></a>
                         </span></li>
-                <li><span class="googl">
+                    <li><span class="googl">
                             <a href="#"><img src="img/icons/vector-smart-objectg.png"></a>
                         </span><span class="t">
                            <a href="#"><img src="img/icons/vector-smart-objecttt.png"></a>
                         </span><span class="vk">
                             <a href="#"><img src="img/icons/vector-smart-objectvv.png"></a>
                         </span></li>
-            </ul>
-            <ul class="footer_icons">
-                <li><img src="img/icons/5-layers.png"></li>
-            </ul>
-        </div>
-        <div class="footer_adapt">
-            <div class="wrapper">
-                <button class="bottom_menu"><img src="img/icons/rounded-rectangle-2-copy-3.png"></button>
-                <ul class="footer_adapt_list">
-                    <li><a href="#">Главная</a></li>
-                    <li><a href="#">О нас</a></li>
-                    <li><a href="#">Корзина</a></li>
-                    <li><a href="#">Контакты</a></li>
-                    <li><a href="#">Партнерам</a></li>
                 </ul>
-                <span class="copy">&copy;LookShop.com</span>
             </div>
-        </div>
-    </footer>
-</section>
+            <div class="footer_adapt">
+                <button class="bottom_menu"><img src="img/icons/rounded-rectangle-2-copy-3.png"></button>
+                <div class="wrapper">
+                    <ul class="footer_adapt_list">
+                        <li><a href="/">Главная</a></li>
+                        <li><a href="about.html">О нас</a></li>
+                        <li><a href="products.html">Категории</a></li>
+                        <li><a href="contact.html">Контакты</a></li>
+                        <li><a href="partneram.html">Партнерам</a></li>
+                        <li><a href="basket.html">Корзина</a></li>
+                    </ul>
+                    <span class="copy">&copy;LookShop.com</span>
+                </div>
+            </div>
+        </footer>
+    </section>
 </div>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<script type="text/javascript" src="libs/slick/slick.min.js"></script>
+<script src="js/jqyery.js"></script>
+<script src="js/wow.min.js"></script>
 
+<script>
+    new WOW().init();
+</script>
 </body>
 </html>

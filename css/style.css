@@ -13,11 +13,6 @@ html,body{
     background: rgba(0,0,0,0.8);
     z-index: 88888;
     display: none;
-    pointer-events: none;
-}
-.modal_dialog:target{
-    display: block;
-    pointer-events: auto;
 }
 
 .modal_dialog > div{
@@ -85,7 +80,7 @@ html,body{
     background:linear-gradient(to bottom, #fd926d 0%, #ffffff 100%);
 }
 
-.auth input[type=submit]{
+.auth input[type=button]{
     display: block;
     border: none;
     border-radius: 2px;
@@ -139,7 +134,7 @@ html,body{
     display: inline-block;
 }
 .care{
-    font-family: "Arial MT",sans-serif;
+    font-family: "Source Sans Pro";
     font-size: 11px;
     font-weight: 400;
     text-transform: uppercase;
@@ -158,7 +153,7 @@ html,body{
 .select{
     text-align: center;
     width: 71px;
-    font-family: "Arial MT",sans-serif;
+    font-family: "Source Sans Pro";
     font-size: 11px;
     font-weight: 400;
     text-transform: uppercase;
@@ -185,7 +180,7 @@ html,body{
 .account{
     text-align: right;
     width: 129px;
-    font-family: "Arial MT",sans-serif;
+    font-family: "Source Sans Pro";
     font-size: 11px;
     font-weight: 400;
     text-transform: uppercase;
@@ -210,16 +205,7 @@ html,body{
     color: #ffffff;
     text-decoration: underline;
 }
-.account_list:before{
-    content: '';
-    display: block;
-    position: absolute;
-    top: 7px;
-    left: 10px;
-    width: 17px;
-    height: 15px;
-    background: url(../img/icons/contact_user.png) no-repeat;
-}
+
 .icon_search{
     width: 34px;
     border-right: 1px solid #444444;
@@ -348,7 +334,7 @@ nav:after{
 .menu_list li{
     display: inline-block;
     color: #000000;
-    font-family: "Arial MT",sans-serif;
+    font-family: "Source Sans Pro";
     font-size: 19px;
     font-weight: 400;
     letter-spacing: -0.08px;
@@ -455,7 +441,7 @@ nav:after{
     padding-left: 9px;
     padding-top: 2px;
     color: #949393;
-    font-family: "Arial MT",sans-serif;
+    font-family: "Source Sans Pro";
     font-size: 12px;
     font-weight: 400;
 }
@@ -573,7 +559,7 @@ nav:after{
 }
 .add_mail span{
     color: #6b6b6b;
-    font-family: "Arial MT",sans-serif;
+    font-family: "Source Sans Pro";
     font-size: 12px;
     font-weight: 400;
     letter-spacing: -0.06px;
@@ -704,7 +690,7 @@ input[type=text]{
     top: 77%;
     text-shadow: 0 2px 0 rgba(0, 0, 0, 0.19);
     color: #ffffff;
-    font-family: "Helvetica Neue LT Std - Ult Lt Cn",sans-serif;
+    font-family: "Source Sans Pro";
     font-size: 30px;
     font-weight: 400;
     text-transform: uppercase;
@@ -722,7 +708,7 @@ input[type=text]{
     top: 20px;
     left: 20px;
     color: #ffffff;
-    font-family: "Helvetica Neue LT Std - Cn",sans-serif;
+    font-family: "Source Sans Pro";
     font-size: 36px;
     font-weight: 400;
     line-height: 30px;
@@ -766,9 +752,7 @@ input[type=text]{
 #slider_bott_ul{
     cursor: pointer;
 }
-.slider_items2t{
-    display: none;
-}
+
 
 .slider_bott li:first-child{
     width: 135px;
@@ -783,29 +767,8 @@ input[type=text]{
 .slider_bott li:last-child{
     width: 100px;
 }
-.slider_butto_bot{
-    display: inline-block;
-    float: right;
-}
-.slider_butto_bot a {
-    display: block;
-    height: 100%;
-    width: 100%;
-}
-.slider_butto_bot span:first-child{
-    display: inline-block;
-    width: 45px;
-    height: 45px;
-    background: url(../img/icons/pixel-arrows-r2.png) no-repeat center;
-    background-color: #f2f2f2;
-}
-.slider_butto_bot span:last-child{
-    display: inline-block;
-    width: 45px;
-    height: 45px;
-    background: url(../img/icons/pixel-arrows-r3.png) no-repeat center;
-    background-color: #ffa687;
-}
+
+
 .slider_body{
     max-height: 400px;
     width: 100%;
@@ -815,6 +778,21 @@ input[type=text]{
 }
 .slider_but_rasp{
     background-color: #ffa687;
+}
+
+.whiteborder {
+    border: 1px solid #fd926d;
+    border-bottom: 1px solid #fff;
+    border-radius: 3px 3px 0  0;
+    background: #fd926d;
+
+}
+
+.hede{
+    display: none!important;
+}
+.showw{
+    display: block!important;
 }
 
 
@@ -828,13 +806,19 @@ input[type=text]{
 .product_r{
     display: flex;
     flex-direction: column;
-    justify-content: space-around;
+    flex-wrap: wrap;
+    flex-basis: 220px;
+    justify-content: space-between;
     background-color: #f9f5f4;
     transition: 1s;
     position: relative;
-
-
+    margin-bottom: 20px;
 }
+
+.product_r:hover {
+    transform: scale(1.1);
+}
+
 
 .sale{
     position: absolute;
@@ -933,7 +917,7 @@ input[type=text]{
     display: block;
     text-align: center;
     color: #373737;
-    font-family: "Arial MT",sans-serif;
+    font-family: "Source Sans Pro";
     font-size: 12px;
     font-weight: 400;
     text-transform: uppercase;
@@ -943,7 +927,7 @@ input[type=text]{
 .price_val_r{
     display: inline-block;
     color: #373737;
-    font-family: "Arial MT",sans-serif;
+    font-family: "Source Sans Pro";
     font-size: 23px;
     font-weight: 400;
     text-transform: uppercase;
@@ -952,7 +936,7 @@ input[type=text]{
 
 .product_price_r{
     color: #373737;
-    font-family: "Arial MT",sans-serif;
+    font-family: "Source Sans Pro";
     font-size: 23px;
     font-weight: 400;
     text-transform: uppercase;
@@ -1004,10 +988,6 @@ input[type=text]{
 
 }
 
-
-#slider_items2t{
-    display: none;
-}
 .chang_container{
     display: flex;
     justify-content: space-between;
@@ -1040,7 +1020,7 @@ input[type=text]{
     position: absolute;
     top: 33px;
     left: 32px;
-    font-family: "A Empirial",arial,sans-serif;
+    font-family: "Source Sans Pro";
     font-size: 17px;
     font-weight: 400;
     text-transform: uppercase;
@@ -1085,11 +1065,10 @@ input[type=text]{
 .centr_hr span{
 
     color: #414141;
-    font-family: "Arial - Bold MT",sans-serif;
+    font-family: "Source Sans Pro";
     font-size: 15px;
     font-weight: 400;
     text-transform: uppercase;
-    /* Text style for "favourite" */
     letter-spacing: -0.15px;
 }
 .brands{
@@ -1123,17 +1102,16 @@ input[type=text]{
 }
 .obout h1{
     color: #414141;
-    font-family: "Arial MT",sans-serif;
+    font-family: "Source Sans Pro";
     font-size: 24px;
     font-weight: 400;
-    /* Text style for "About Look" */
     letter-spacing: -0.24px;
     margin-top: 26px;
     margin-bottom: 9px;
 }
 .obout p{
     color: #999999;
-    font-family: "Arial MT",sans-serif;
+    font-family: "Source Sans Pro";
     font-size: 14px;
     font-weight: 400;
     line-height: 18px;
@@ -1161,10 +1139,9 @@ input[type=text]{
 .we_accept span {
     opacity: 0.5;
     color: #414141;
-    font-family: "Arial MT", sans-serif;
+    font-family: "Source Sans Pro";
     font-size: 12px;
     font-weight: 400;
-    /* Text style for "We accept" */
     letter-spacing: -0.12px;
     vertical-align: super;
     margin-right: 12px;
@@ -1288,7 +1265,7 @@ input[type=text]{
 .pagination_count,.pagination_count span{
     display: inline-block;
     color: #4d4d4d;
-    font-family: "Arial MT",sans-serif;
+    font-family: "Source Sans Pro";
     font-size: 11px;
     font-weight: 400;
 }
@@ -1347,7 +1324,7 @@ input[type=text]{
 }
 .products_menu_title{
 color: #ffffff;
-    font-family: "Arial MT",sans-serif;
+    font-family: "Source Sans Pro";
     font-size: 12px;
     text-transform: uppercase;
 }
@@ -1369,7 +1346,7 @@ color: #ffffff;
     list-style-type: none;
     border-bottom: 1px solid #d6d6d6;
     color: #727272;
-    font-family: "Arial MT",sans-serif;
+    font-family: "Source Sans Pro";
     font-size: 12px;
     font-weight: 400;
     line-height: 26px;
@@ -1442,7 +1419,7 @@ color: #ffffff;
     margin-top: 40px;
     text-align: center;
     color: #5e5e5e;
-    font-family: "Arial MT";
+    font-family: "Source Sans Pro";
     font-size: 12px;
     font-weight: 400;
     text-transform: uppercase;
@@ -1468,7 +1445,7 @@ color: #ffffff;
     height: 100%;
     color: #4d4d4d;
     background-color: #f4f4f4;
-    font-family: "Arial MT",sans-serif;
+    font-family: "Source Sans Pro";
     font-size: 11px;
     font-weight: 400;
     text-transform: uppercase;
@@ -1495,7 +1472,7 @@ color: #ffffff;
 }
 .product_onsale_title{
     color: #5e5e5e;
-    font-family: "Arial MT";
+    font-family: "Source Sans Pro";
     font-size: 12px;
     font-weight: 400;
     text-transform: uppercase;
@@ -1509,7 +1486,7 @@ color: #ffffff;
 .new_price{
     display: inline-block;
     color: #fd926d;
-    font-family: "Arial - Bold MT",sans-serif;
+    font-family: "Source Sans Pro";
     font-size: 16px;
     font-weight: 400;
     text-transform: uppercase;
@@ -1535,7 +1512,16 @@ color: #ffffff;
 
 }
 .img_for_prod{
+
     margin-right: 13px;
+    margin-top: 13px;
+}
+
+.br_top{
+    border-top: 2px solid #000000;
+}
+.br_none{
+    border:none;
 }
 .img_for_prod img{
     max-width: 90px;
@@ -1557,7 +1543,7 @@ color: #ffffff;
 }
 .title_for_soc{
     color: #4d4d4d;
-    font-family: "Arial MT",sans-serif;
+    font-family: "Source Sans Pro";
     font-size: 11px;
     font-weight: 400;
     text-transform: uppercase;
@@ -1577,7 +1563,7 @@ color: #ffffff;
 .product_discription_title{
     display: inline-block;
     color: #ffffff;
-    font-family: "Arial MT",sans-serif;
+    font-family: "Source Sans Pro";
     font-size: 14px;
     font-weight: 400;
     text-transform: uppercase;
@@ -1613,14 +1599,14 @@ color: #ffffff;
 }
 .product_content_left .title{
     color: #4a4a4a;
-    font-family: "Arial MT",sans-serif;
+    font-family: "Source Sans Pro";
     font-size: 24px;
     font-weight: 400;
 }
 .product_price{
     display: inline-block;
     color: #fd926d;
-    font-family: "Arial - Bold MT",sans-serif;
+    font-family: "Source Sans Pro";
     font-size: 36px;
     font-weight: 400;
     margin-top: 38px;
@@ -1630,7 +1616,7 @@ color: #ffffff;
     margin-top: 31px;
     color: #8f8f8f;
     padding-right: 20px;
-    font-family: "Arial MT";
+    font-family: "Source Sans Pro";
     font-size: 12px;
     font-weight: 400;
     line-height: 18px;
@@ -1687,11 +1673,48 @@ float: left;
 }
 
 
+.related_product{
+    margin-top: 50px;
+}
+.related_product_title{
+    text-align: center;
+    color: #414141;
+    font-family: "Source Sans Pro";
+    font-size: 20px;
+    font-weight: 400;
+    text-transform: uppercase;
+    margin-bottom: 45px;
+    position: relative;
+}
+.related_product_title:before{
+    content: '';
+    height: 5px;
+    width: 100%;
+    display: block;
+    background-color: #b2b2b2;
 
-/*page about*/
+}
+.related_product_title:after{
+    content: '';
+    height: 5px;
+    width: 100%;
+    display: block;
+    background-color: #b2b2b2;
+
+}
+.related_product .centred{
+    margin-left: 0;
+}
+.related_product  .product_r:first-child{
+    margin-left: 0;
+}
+
+
+
+/*page and*/
 
 .first_block{
-    max-width: 1200px;
+    max-width: 970px;
     height: 244px;
     margin: 0 auto;
     background: url(../img/background-about.png) no-repeat top;
@@ -1699,7 +1722,7 @@ float: left;
     text-align: center;
 }
 .text1{
-    font-family: Arial,sans-serif;
+    font-family: "Source Sans Pro";
     font-size: 60px;
     color: #ffffff;
     padding-top: 145px;
@@ -1708,7 +1731,7 @@ float: left;
     letter-spacing: 3px;
 }
 .text2{
-    font-family: Arial,sans-serif;
+    font-family: "Source Sans Pro";
     font-size: 20px;
     color: #c8c8c8;
     margin: 0;
@@ -1717,7 +1740,7 @@ float: left;
 }
 
 .text3{
-    font-family: Arial,sans-serif;
+    font-family: "Source Sans Pro";
     text-indent: 25px;
     font-size: 35px;
     color: #2d2d2d;
@@ -1729,7 +1752,7 @@ float: left;
 .text4{
     text-indent: 10px;
     padding-left: 10px;
-    font-family: Tahoma,sans-serif;
+    font-family: "Source Sans Pro";
     font-size: 18px;
     color: #f9f6ff;
     margin: 0;
@@ -1746,41 +1769,12 @@ float: left;
     margin:  0 auto;
 }
 
-.who_we_are{
-    font-family: "Century Schoolbook";
-    max-width: 1200px;
-    margin: 0 auto;
-    margin-top: 30px;
-    margin-bottom: 30px;
-    background: linear-gradient(to bottom, #fd926d 0% , #d64c19 100%);
-    text-shadow: 1px 2px #000;
-    box-shadow: 4px 4px 10px 0px #fd7b56;
-   
-}
-.who_we_are_title{
-
-    font-size: 50px;
-    text-align: center;
-    padding: 10px;
-}
-.who_we_are_text{
-    padding: 10px 50px;
-    font-size: 30px;
-}
-.who_we_are_list{
-    list-style-type: decimal!important;
-
-}
-.who_we_are_list li{
-
-    font-size: 30px;
-    padding: 10px;
-    padding-left: 20px;
-    text-decoration: overline;
+.section_about .wrapper{
+    background: #d6c6d3;
 }
 .about_title{
     color: rgba(255, 255, 255, 0.64);
-    font-family: "Century Schoolbook";
+    font-family: "Source Sans Pro";
     font-size: 70px;
     font-weight: 700;
     padding-top: 50px;
@@ -1788,7 +1782,89 @@ float: left;
     text-transform: uppercase;
     letter-spacing: 2.56px;
     text-shadow: 1px 2px #000;
+    text-align: center;
+    margin-bottom: 50px;
+
 }
+
+.about_section_content{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+
+}
+.section-col{
+    width: 50%;
+    padding: 0 50px;
+    overflow: hidden;
+
+}
+
+.section-col-content p{
+    margin-bottom: 30px;
+    font-family: "Source Sans Pro";
+    font-size: 2vw;
+    font-weight: 400;
+    line-height: 28px;
+    color: #ffffff;
+}
+
+
+.position_img{
+    position: relative;
+    height: 0;
+    width: 50%;
+    padding-bottom: 33.4%;
+    padding-right: 0;
+    padding-left: 0;
+}
+
+.section-col img{
+    width: 100%;
+    height: 100%;
+    height: auto;
+}
+.red{
+    background: #fd926d;
+}
+
+.mentor{
+    color: rgba(233, 233, 255, 0.64);
+    font-family: "Source Sans Pro";
+    font-size: 30px;
+    font-weight: 700;
+    padding-top: 10px;
+    line-height: 30px;
+    text-transform: uppercase;
+    letter-spacing: 2.56px;
+    text-shadow: 1px 2px #000;
+    text-align: center;
+    margin-bottom: 64px;
+}
+
+.btn_cont{
+    display: inline-block;
+    width: 200px;
+    height: 40px;
+    border: 1px solid #fd926d;
+    text-align: center;
+    padding: 10px;
+    color: #ffffff;
+    margin-bottom: 100px;
+    margin-top: 50px;
+}
+.btn_cont:hover{
+    background: #fd926d;
+}
+
+
+
+
+
+
+
+
+
 
 .rekvizity{
     display: flex;
@@ -1796,11 +1872,11 @@ float: left;
     margin: 0 auto;
 }
 .rekvizity p{
-    color: #646464;
-
+    color: #080503;
 }
+
 .left_rec{
-    font-family: arial,sans-serif;
+    font-family: "Source Sans Pro";
     font-size: 35px;
     color: #ffffff;
     position: relative;
@@ -1825,7 +1901,7 @@ float: left;
     width: 100%;
     height: 100%;
     display: flex;
-    font-family: tahoma,sans-serif;
+    font-family: "Source Sans Pro";
     font-size: 14px;
     padding-left: 60px;
     padding-top: 40px;
@@ -1839,7 +1915,7 @@ float: left;
 .right_rec_right{
     width: 65%;
     height: 100%;
-    font-family: tahoma,sans-serif;
+    font-family: "Source Sans Pro";
     font-size: 14px;
     line-height: 2;
 }
@@ -1892,7 +1968,7 @@ float: left;
 
 }
 .contact_form h1{
-    font-family: "Helvetica Neue LT Std - Cn", sans-serif;
+    font-family: "Source Sans Pro";
     font-size: 25px;
     text-align: center;
     color: #0a0a0a;
@@ -2148,7 +2224,7 @@ float: left;
     font-size: 47px;
     display: block;
     padding: 0 0 5px;
-    font-family: 'Roboto-Light','Arial',sans-serif;
+    font-family: "Source Sans Pro";
     font-weight: bold;
 }
 .last_mre{
@@ -2222,6 +2298,10 @@ float: left;
     font-size: 16px;
     text-transform: uppercase;
     display: block;
+    color: #dddddd;
+}
+.cart_title{
+    margin-left: 10px;
 }
 .cart_price{
     color: #595959;
@@ -2295,7 +2375,7 @@ float: left;
 
 .checout_top h3{
     color: #595959;
-    font-family: "Source Sans Pro",sans-serif;
+    font-family: "Source Sans Pro";
     font-size: 17px;
     font-weight: 700;
     line-height: 12px;
@@ -2440,7 +2520,7 @@ float: left;
     color: #544f4d;
     padding-bottom: 11px;
     margin-top: -3px;
-    font-family: "Arial - Bold MT",sans-serif;
+    font-family: "Source Sans Pro";
     font-size: 16px;
     font-weight: 700;
     line-height: 20px;
@@ -2450,7 +2530,7 @@ float: left;
 .footer_list li{
     opacity: 0.7;
     color: #544f4d;
-    font-family: "Arial MT",sans-serif;
+    font-family: "Source Sans Pro";
     font-size: 12px;
     font-weight: 400;
     line-height: 18px;
@@ -2520,7 +2600,7 @@ list-style-type: none;
 }
 .footer_adapt_list li a  {
     color: #8d8d8d;
-    font-family: "Arial MT",sans-serif;
+    font-family: "Source Sans Pro";
     font-size: 15px;
     font-weight: 400;
     position: relative;

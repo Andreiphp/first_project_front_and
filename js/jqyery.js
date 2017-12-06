@@ -22,32 +22,7 @@ $(function () {
 });
 
 
-// слайдер с товарами
-$('.slider_body').slick({
-    centerMode: true,
-    centerPadding: '30px',
-    slidesToShow: 4,
-    responsive: [
-        {
-            breakpoint: 768,
-            settings: {
-                arrows: true,
-                centerMode: true,
-                centerPadding: '2px',
-                slidesToShow: 4
-            }
-        },
-        {
-            breakpoint: 500,
-            settings: {
-                arrows: false,
-                centerMode: true,
-                centerPadding: '2px',
-                slidesToShow: 2
-            }
-        }
-    ]
-});
+
 
 $('.single-item').slick({
     dots: true,
