@@ -1,4 +1,4 @@
-// верхнее меню
+// верхнее меню категории
 $(function () {
     $('.top_menu').on('click',function () {
         $('.menu').slideToggle(300, function () {
@@ -20,7 +20,17 @@ $(function () {
         });
     });
 });
+// верхнее меню
+$(function () {
+    $('.top_menu_top').on('click',function () {
+        $('.footer_adapt_list_top').slideToggle(300, function () {
+            if($(this).css('display') === 'none'){
+                $(this).removeAttr('style');
 
+            }
+        });
+    });
+});
 
 
 

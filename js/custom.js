@@ -4,7 +4,7 @@ window.onload = function () {
         var slider_items; // заголовок вкладки
         var slider_body; // блок содержащий контент вкладки
         slider_items=document.getElementsByClassName('slider_items');
-        slider_wrap_tab=document.getElementsByClassName('slider_wrap_tab');
+        slider_wrap_tab=document.getElementsByClassName('container_for_prod');
         hideTabsContent(1);
         function hideTabsContent(a) {
             for (var i=a; i<slider_wrap_tab.length; i++) {
