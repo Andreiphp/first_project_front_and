@@ -574,6 +574,9 @@
     .bascet_count i{
         margin-top: 5px;
     }
+    .product_discription_hide table {
+        width: 89%;
+    }
     @media screen and (max-width: 520px){
         .cart_product{
             flex-direction: column;
