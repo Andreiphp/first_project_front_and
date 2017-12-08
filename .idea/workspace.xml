@@ -2,44 +2,12 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="55266d99-a3bd-4adc-8487-a938ce3101a5" name="Default" comment="">
-      <change type="DELETED" beforePath="$PROJECT_DIR$/img/bc.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/img/bc0.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/img/icons/501018_audio_40x40.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/img/icons/70391.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/img/icons/filled.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/img/icons/free.ico" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/img/icons/handshake64 (1).png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/img/icons/handshake64.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/img/icons/move.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/img/icons/nout.svg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/img/icons/shirt.svg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/img/layer-17.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/img/layer-18.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/img/layer-19.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/img/layer-20.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/img/layer-3.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/img/layer-30.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/img/layer-32.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/img/layer-39-two.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/img/layer-39.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/img/layer-40.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/img/layer-41.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/img/layer-44.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/img/layer-48.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/img/layer-5.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/img/layer-6.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/img/layer-7.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/img/layer-8.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/img/layer-9.png" afterPath="" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/about.html" afterPath="$PROJECT_DIR$/about.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/basket.html" afterPath="$PROJECT_DIR$/basket.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/contact.html" afterPath="$PROJECT_DIR$/contact.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/css/media.css" afterPath="$PROJECT_DIR$/css/media.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/css/style.css" afterPath="$PROJECT_DIR$/css/style.css" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/img/NBiuRTCtH5kpU6rrZWaws_50.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/img/logo-texture.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/img/mentor_2.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/img/Слой-1.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/img/Слой-2.png" afterPath="" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/index.html" afterPath="$PROJECT_DIR$/index.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/partneram.html" afterPath="$PROJECT_DIR$/partneram.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/product.html" afterPath="$PROJECT_DIR$/product.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/products.html" afterPath="$PROJECT_DIR$/products.html" />
     </list>
     <ignored path="avacode.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -63,8 +31,8 @@
       <file leaf-file-name="index.html" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/index.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="272">
-              <caret line="16" column="6" selection-start-line="16" selection-start-column="6" selection-end-line="16" selection-end-column="6" />
+            <state relative-caret-position="390">
+              <caret line="317" column="44" selection-start-line="317" selection-start-column="44" selection-end-line="317" selection-end-column="44" />
               <folding />
             </state>
           </provider>
@@ -418,12 +386,12 @@
       <workItem from="1512549255318" duration="23130000" />
       <workItem from="1512588618089" duration="4528000" />
       <workItem from="1512645128283" duration="30392000" />
-      <workItem from="1512723093446" duration="23157000" />
+      <workItem from="1512723093446" duration="23382000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="790890000" />
+    <option name="totallyTimeSpent" value="791115000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
@@ -743,8 +711,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/index.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="272">
-          <caret line="16" column="6" selection-start-line="16" selection-start-column="6" selection-end-line="16" selection-end-column="6" />
+        <state relative-caret-position="390">
+          <caret line="317" column="44" selection-start-line="317" selection-start-column="44" selection-end-line="317" selection-end-column="44" />
           <folding />
         </state>
       </provider>
