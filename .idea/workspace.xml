@@ -2,10 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="55266d99-a3bd-4adc-8487-a938ce3101a5" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/basket.html" afterPath="$PROJECT_DIR$/basket.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/css/media.css" afterPath="$PROJECT_DIR$/css/media.css" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/css/style.css" afterPath="$PROJECT_DIR$/css/style.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/products.html" afterPath="$PROJECT_DIR$/products.html" />
     </list>
     <ignored path="avacode.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -69,8 +68,8 @@
       <file leaf-file-name="basket.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/basket.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="357">
-              <caret line="127" column="28" selection-start-line="127" selection-start-column="28" selection-end-line="127" selection-end-column="28" />
+            <state relative-caret-position="119">
+              <caret line="132" column="46" selection-start-line="132" selection-start-column="46" selection-end-line="132" selection-end-column="46" />
               <folding />
             </state>
           </provider>
@@ -96,21 +95,21 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="style.css" pinned="false" current-in-tab="false">
+      <file leaf-file-name="style.css" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/css/style.css">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="136">
-              <caret line="1433" column="18" selection-start-line="1433" selection-start-column="18" selection-end-line="1433" selection-end-column="18" />
+            <state relative-caret-position="463">
+              <caret line="2095" column="23" selection-start-line="2095" selection-start-column="23" selection-end-line="2095" selection-end-column="23" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="media.css" pinned="false" current-in-tab="true">
+      <file leaf-file-name="media.css" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/css/media.css">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="216">
-              <caret line="524" column="17" selection-start-line="524" selection-start-column="17" selection-end-line="524" selection-end-column="17" />
+            <state relative-caret-position="289">
+              <caret line="570" column="28" selection-start-line="570" selection-start-column="28" selection-end-line="570" selection-end-column="28" />
               <folding />
             </state>
           </provider>
@@ -163,9 +162,9 @@
         <option value="$PROJECT_DIR$/partneram.html" />
         <option value="$PROJECT_DIR$/index.html" />
         <option value="$PROJECT_DIR$/products.html" />
-        <option value="$PROJECT_DIR$/css/style.css" />
         <option value="$PROJECT_DIR$/basket.html" />
         <option value="$PROJECT_DIR$/css/media.css" />
+        <option value="$PROJECT_DIR$/css/style.css" />
       </list>
     </option>
   </component>
@@ -316,6 +315,9 @@
   <component name="ShelveChangesManager" show_recycled="false">
     <option name="remove_strategy" value="false" />
   </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
       <changelist id="55266d99-a3bd-4adc-8487-a938ce3101a5" name="Default" comment="" />
@@ -384,12 +386,12 @@
       <workItem from="1512549255318" duration="23130000" />
       <workItem from="1512588618089" duration="4528000" />
       <workItem from="1512645128283" duration="30392000" />
-      <workItem from="1512723093446" duration="24773000" />
+      <workItem from="1512723093446" duration="28527000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="792506000" />
+    <option name="totallyTimeSpent" value="796260000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
@@ -677,14 +679,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/css/style.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="136">
-          <caret line="1433" column="18" selection-start-line="1433" selection-start-column="18" selection-end-line="1433" selection-end-column="18" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/products.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="223">
@@ -701,16 +695,24 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/basket.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="357">
-          <caret line="127" column="28" selection-start-line="127" selection-start-column="28" selection-end-line="127" selection-end-column="28" />
+        <state relative-caret-position="119">
+          <caret line="132" column="46" selection-start-line="132" selection-start-column="46" selection-end-line="132" selection-end-column="46" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/css/media.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="216">
-          <caret line="524" column="17" selection-start-line="524" selection-start-column="17" selection-end-line="524" selection-end-column="17" />
+        <state relative-caret-position="289">
+          <caret line="570" column="28" selection-start-line="570" selection-start-column="28" selection-end-line="570" selection-end-column="28" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/css/style.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="463">
+          <caret line="2095" column="23" selection-start-line="2095" selection-start-column="23" selection-end-line="2095" selection-end-column="23" />
           <folding />
         </state>
       </provider>

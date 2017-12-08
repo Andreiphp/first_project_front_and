@@ -568,7 +568,7 @@
         justify-content: center;
     }
     .preim_list{
-        margin-bottom: 25px;
+        margin-bottom: 38px;
     }
 
     .bascet_count i{
@@ -576,6 +576,9 @@
     }
     .product_discription_hide table {
         width: 89%;
+    }
+    .about_text h2{
+        font-size: 27px;
     }
     @media screen and (max-width: 520px){
         .cart_product{
