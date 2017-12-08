@@ -32,33 +32,6 @@ window.onload = function () {
     }
 
 
-
-
-
-
-
-    openmenu();
-    function  openmenu() {
-        var selector = document.getElementsByName('ancor');
-        for (var t = 0; t < selector.length; t++) {
-            selector[t].className = 'menu_icons_open';
-        }
-        var myTag = document.getElementsByClassName('menu_icons_o');
-        for (var i = 0; i < myTag.length; i++) {
-            myTag[i].onclick = function (event) {
-                if (event.target.className === '' || event.target.className == 'menu_icons_close') {
-                    event.target.className = 'menu_icons_open ';
-                } else {
-                    event.target.className = 'menu_icons_close';
-                }
-
-            }
-        }
-    }
-
-
-
-
     overflow_hid();
     function overflow_hid() {
         var close = document.getElementById('close');

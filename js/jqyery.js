@@ -54,19 +54,7 @@ $('.slider_3').slick({
 });
 
 // ползунок диапазона цен
-$( function() {
-    $( "#slider-range" ).slider({
-        range: true,
-        min: 5,
-        max: 500,
-        values: [ 5, 500 ],
-        slide: function( event, ui ) {
-            $( "#amount" ).val( "$" + ui.values[ 0 ] + " - $" + ui.values[ 1 ] );
-        }
-    });
-    $( "#amount" ).val( "$" + $( "#slider-range" ).slider( "values", 0 ) +
-        " - $" + $( "#slider-range" ).slider( "values", 1 ) );
-});
+
 
 $(".accordion .product_discription_hide").hide().prev().click(function (){
     $(".accordion .product_discription_hide").not(this).slideUp();
