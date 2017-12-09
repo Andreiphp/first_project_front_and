@@ -1,5 +1,4 @@
 window.onload = function () {
-
     if(document.getElementById('slider_target')){
         var slider_items; // заголовок вкладки
         var slider_body; // блок содержащий контент вкладки
