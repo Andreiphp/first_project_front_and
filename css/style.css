@@ -2459,8 +2459,152 @@ background: rgba(255, 166, 135,1);
     height: 30px;
 }
 
+
 /*page cart and*/
 
+
+/*bread_crumbs*/
+.bread_crumbs{
+    border-top: 1px solid #8f8f8f;
+    border-bottom: 1px solid #8f8f8f;
+    width: 100%;
+    margin: 10px 0 10px 0;
+}
+.bread_crumbs li{
+    display: inline-block;
+    list-style-type: none;
+    padding: 0;
+    vertical-align: middle;
+    margin-right: 10px;
+    color: #000000;
+}
+.bread_crumbs_home{
+    width: 25px;
+}
+.bread_crumbs_home img{
+    width: 100%;
+}
+li.bread_crumbs_active{
+    color: #fd926d;
+}
+
+
+/*bread_crumbs and*/
+
+
+/*reviews*/
+@keyframes scroll {
+    0% {
+        transform: translate(0, 0);
+    }
+
+    100% {
+        transform: translate(-100%, 0)
+    }
+}
+.marquee {
+    display: block;
+    width: 100%;
+    white-space: nowrap;
+    overflow: hidden;
+
+}
+.btn_revew{
+    background: #ffffff;
+    width: 120px;
+    height: 50px;
+    font-size: 16px;
+    border: 1px solid #fd926d;
+    transition: 1s;
+}
+.btn_revew span{
+    transition: 1s;
+    color: #000000;
+}
+.btn_revew:hover{
+    background: #fd926d;
+}
+.btn_revew:hover span{
+    color: #ffffff;
+}
+.marquee span {
+    display: inline-block;
+    padding-left: 100%;
+    color: #fd926d;
+    font-size: 30px;
+    -webkit-animation: scroll 10s 2 linear ;
+    -moz-animation: scroll 10s 2 linear;
+    animation: scroll 10s 2 linear;
+}
+.reviews{
+    width: 100%;
+    margin: 20px auto 20px;
+    border: 1px solid #d6d2cd;
+    border-left: 4px solid #fd926d;
+    position: relative;
+    transition: 1s;
+}
+
+.reviews:hover{
+      box-shadow: 0 10px 20px -5px rgba(161,161,161,1);
+
+}
+.reviews:after{
+    content: '';
+    display: block;
+    clear: both;
+}
+.reviews_content{
+    display: inline-block;
+    width: 80%;
+    float: right;
+    padding: 20px;
+}
+.reviews_content p{
+    font-size: 20px;
+    color: #000000;
+    text-align: justify;
+}
+.reviews_avatar{
+    float: left;
+    display: inline-block;
+    width: 15%;
+    margin:20px 10px 0;
+    vertical-align: middle;
+    text-align: center;
+    padding: 20px;
+    background: floralwhite;
+}
+.reviews_avatar img{
+    width: 100%;
+}
+.reviews_info li{
+    width: 100%;
+    list-style-type: none;
+    margin-left: 10px;
+
+}
+.reviews_info{
+    float: left;
+    clear: left;
+}
+.reviews_name{
+    color: #000000;
+    text-align: center;
+}
+.reviews_data{
+    color: #000;
+    text-align: center;
+}
+.reviews_btn{
+    float: right;
+}
+.reviews_btn li{
+    display: inline-block;
+}
+
+
+/*reviews and*/
 
 /*footer*/
 .footer_list{

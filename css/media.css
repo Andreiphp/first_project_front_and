@@ -580,6 +580,13 @@
     .about_text h2{
         font-size: 27px;
     }
+    .bread_crumbs{
+      width: 96%;
+        margin: 0 auto;
+    }
+    .reviews_avatar{
+        padding: 0;
+    }
     @media screen and (max-width: 520px){
         .cart_product{
             flex-direction: column;
