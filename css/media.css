@@ -587,6 +587,9 @@
     .reviews_avatar{
         padding: 0;
     }
+    .btn_revew{
+        margin-left: 10px;
+    }
     @media screen and (max-width: 520px){
         .cart_product{
             flex-direction: column;
